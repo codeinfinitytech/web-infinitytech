@@ -3,13 +3,11 @@ import React from "react";
 
 function Networking() {
   return (
-    <div className="relative  w-full gap-8  flex flex-col ">
-      <h1 className="text-[32px] text-center text-[#F59620] font-[700]">
-        Networking
-      </h1>
-      <div className="flex max-w-7xl flex-col md:flex-row">
-        <div className="relative  min-h-[400px] pt-20 px-4  sm:px-10 flex w-full md:w-1/2 justify-end bg-[#EEEEEE]">
-          <div className=" absolute bottom-0 left-0">
+    <div className="flex w-full flex-col items-center justify-center gap-10">
+      <h1 className="text-[32px] text-[#F59620] font-[600]">Networking</h1>
+      <div className="flex flex-col mdl:flex-row w-full max-w-7xl">
+        <div className="relative flex flex-col w-full mdl:w-1/2 bg-[#EEEEEE] rounded-sm p-8 gap-4 overflow-hidden">
+          <div className="absolute bottom-0 left-0">
             <svg
               width="210"
               height="254"
@@ -33,8 +31,8 @@ function Networking() {
               />
             </svg>
           </div>
-          <div>
-            <p className="text-[18px] text-center md:text-start line-clamp-6 md:line-clamp-6">
+          <div className="flex flex-col w-full  gap-4">
+            <p className="text-[18px] line-clamp-6">
               Lorem ipsum dolor sit amet consectetur. Est risus tellus lectus
               volutpat feugiat ultrices. Nulla facilisis varius nisi justo ipsum
               amet enim. Eu vel iaculis et cursus fermentum nullam malesuada
@@ -46,37 +44,35 @@ function Networking() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col   w-full mt-4 gap-4 md:mt-0 md:w-1/2 justify-center items-center  px-4">
-          <div className="flex w-full items-center justify-center ">
-            <div className="grid  grid-cols-2  gap-2 items-center justify-center  sm:grid-cols-4  ">
-              <button className="px-[10px] py-[16px] min-w-[100px] max-w-[250px]  text-[14px] font-[500] bg-gray-200 rounded-md">
-                Web and Apps
-              </button>
-              <button className="px-[10px] py-[16px] min-w-[100px] max-w-[250px] text-[14px] font-[500] bg-gray-200 rounded-md">
-                Web and Apps
-              </button>
-              <button className="px-[10px] py-[16px] min-w-[100px] max-w-[250px] text-[14px] font-[500] bg-gray-200 rounded-md">
-                Web and Apps
-              </button>
-              <button className="px-[10px] py-[16px] min-w-[100px] max-w-[250px] text-[14px] font-[500] bg-gray-200 rounded-md">
-                Web and Apps
-              </button>
-            </div>
+        <div className="flex flex-col w-full mdl:w-1/2 p-4">
+          <div className="grid grid-cols-2 sml:grid-cols-4 gap-4 w-full">
+            <button className="py-4 px-2 min-w-[100px] text-[12px] text-white bg-gray-900 rounded-md">
+              Web and apps
+            </button>
+            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-gray-900 rounded-md">
+              Payment gateways
+            </button>
+            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-gray-900 rounded-md">
+              Web and apps
+            </button>
+            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-gray-900  rounded-md">
+              Web and apps
+            </button>
           </div>
-          <div className="flex flex-col  sm:flex-row gap-2">
+          <div className="w-full flex flex-col md:flex-row gap-2 p-2 pt-6 sml:p-10 mdl:p-2 justify-center items-center  ">
             <Image
               src={`/image/service1.png`}
-              width={200}
+              alt="service image"
+              width={400}
               height={0}
-              alt=""
-              className="w-full sm:w-1/2 "
+              className="w-full md:w-1/2 mdl:w-[400px]"
             />
             <Image
               src={`/image/service1.png`}
-              width={200}
+              alt="service image"
+              width={400}
               height={0}
-              alt=""
-              className="w-full sm:w-1/2"
+              className="w-full md:w-1/2 mdl:w-[400px]"
             />
           </div>
         </div>

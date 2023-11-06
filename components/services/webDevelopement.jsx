@@ -1,16 +1,15 @@
+import Image from "next/image";
 import React from "react";
 
-import Image from "next/image";
-
-function WebDevelopement() {
+function webDevelopement() {
   return (
-    <div className="relative  w-full gap-8 items-center justify-center   flex flex-col ">
-      <h1 className="text-[32px] text-center  text-[#F59620] font-[700]">
-        Web Development
+    <div className="flex w-full flex-col items-center justify-center gap-10">
+      <h1 className="text-[32px] text-[#F59620] font-[600]">
+        Web Developement
       </h1>
-      <div className="flex max-w-7xl items-center justify-center mx-auto flex-col md:flex-row">
-        <div className="relative  h-[400px] pt-20 px-20 flex w-full md:w-1/2 justify-end bg-[#EEEEEE]">
-          <div className=" absolute bottom-0 left-0">
+      <div className="flex flex-col mdl:flex-row w-full max-w-7xl">
+        <div className="relative flex flex-col w-full mdl:w-1/2 bg-[#EEEEEE] rounded-sm p-8 gap-4">
+          <div className="absolute bottom-0 left-0">
             <svg
               width="210"
               height="254"
@@ -34,8 +33,8 @@ function WebDevelopement() {
               />
             </svg>
           </div>
-          <div>
-            <p className="text-[18px] text-center md:text-start line-clamp-6 md:line-clamp-6">
+          <div className="flex flex-col w-full  gap-4">
+            <p className="text-[18px] line-clamp-6">
               Lorem ipsum dolor sit amet consectetur. Est risus tellus lectus
               volutpat feugiat ultrices. Nulla facilisis varius nisi justo ipsum
               amet enim. Eu vel iaculis et cursus fermentum nullam malesuada
@@ -45,103 +44,78 @@ function WebDevelopement() {
               quisque lacus rutrum eu purus accumsan at cursus hac. Convallis
               amet aliquet nisi aenean.
             </p>
-
-            <div className="flex-col gap-20 py-5">
-              <h1 className="text-[14px] font-[600] text-black">
-                Our technologies
-              </h1>
-              <div className="flex gap-10">
-                <div className="flex flex-col gap-2">
-                  <div className=" overflow-hidden w-10">
-                    <Image
-                      src={`/image/reactjs.png`}
-                      alt=""
-                      width={200}
-                      height={0}
-                      className="max-w-[100%]"
-                    />
-                  </div>
-                  <h1 className="text-[14px] font-[600] text-black">
-                    React js
-                  </h1>
+            <div className="flex flex-col gap-2">
+              <h1 className="text-[18px] font-[600]">Out Technologies</h1>
+              <div className="flex gap-4">
+                <div className="flex flex-col">
+                  <Image
+                    src={`/image/reactjs.png`}
+                    alt="react js"
+                    width={30}
+                    height={0}
+                  />
+                  <span>React js</span>
                 </div>
-                <div className="flex flex-col gap-2">
-                  <div className=" overflow-hidden w-10">
-                    <Image
-                      src={`/image/reactjs.png`}
-                      alt=""
-                      width={200}
-                      height={0}
-                      className="max-w-[100%]"
-                    />
-                  </div>
-                  <h1 className="text-[14px] font-[600] text-black">
-                    React js
-                  </h1>
+                <div className="flex flex-col">
+                  <Image
+                    src={`/image/reactjs.png`}
+                    alt="react js"
+                    width={30}
+                    height={0}
+                  />
+                  <span>React js</span>
                 </div>
-                <div className="flex flex-col gap-2">
-                  <div className=" overflow-hidden w-10">
-                    <Image
-                      src={`/image/reactjs.png`}
-                      alt=""
-                      width={200}
-                      height={0}
-                      className="max-w-[100%]"
-                    />
-                  </div>
-                  <h1 className="text-[14px] font-[600] text-black">
-                    React js
-                  </h1>
+                <div className="flex flex-col">
+                  <Image
+                    src={`/image/reactjs.png`}
+                    alt="react js"
+                    width={30}
+                    height={0}
+                  />
+                  <span>React js</span>
                 </div>
-                <div className="flex flex-col gap-2">
-                  <div className=" overflow-hidden w-10">
-                    <Image
-                      src={`/image/reactjs.png`}
-                      alt=""
-                      width={200}
-                      height={0}
-                      className="max-w-[100%]"
-                    />
-                  </div>
-                  <h1 className="text-[14px] font-[600] text-black">
-                    React js
-                  </h1>
+                <div className="flex flex-col">
+                  <Image
+                    src={`/image/reactjs.png`}
+                    alt="react js"
+                    width={30}
+                    height={0}
+                  />
+                  <span>React js</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col   w-full mt-4 gap-4 md:mt-0 md:w-1/2 justify-center items-center  px-4">
-          <div className="flex  items-center justify-center ">
-            <div className="grid  grid-cols-2  gap-2 items-center justify-center  sm:grid-cols-4  ">
-              <button className="px-[10px] py-[16px] min-w-[100px] max-w-[250px]  text-[14px] font-[500] bg-gray-200 rounded-md">
-                Web and Apps
-              </button>
-              <button className="px-[10px] py-[16px] min-w-[100px] max-w-[250px] text-[14px] font-[500] bg-gray-200 rounded-md">
-                Web and Apps
-              </button>
-              <button className="px-[10px] py-[16px] min-w-[100px] max-w-[250px] text-[14px] font-[500] bg-gray-200 rounded-md">
-                Web and Apps
-              </button>
-              <button className="px-[10px] py-[16px] min-w-[100px] max-w-[250px] text-[14px] font-[500] bg-gray-200 rounded-md">
-                Web and Apps
-              </button>
-            </div>
+        <div className="flex flex-col w-full mdl:w-1/2 p-4">
+          <div className="grid grid-cols-2 sml:grid-cols-4 gap-4 w-full">
+            <button className="py-4 px-2 min-w-[100px] text-[12px] text-white bg-gray-900 rounded-md">
+              Web and apps
+            </button>
+            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-gray-900 rounded-md">
+              Payment gateways
+            </button>
+            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-gray-900 rounded-md">
+              Web and apps
+            </button>
+            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-gray-900  rounded-md">
+              Web and apps
+            </button>
           </div>
-          <div className="flex flex-col  sm:flex-row gap-2">
+          <div className="w-full flex flex-col md:flex-row gap-2 p-2 pt-6 sml:p-10 mdl:p-2 justify-center items-center  ">
             <Image
               src={`/image/service1.png`}
+              alt="service image"
               width={400}
               height={0}
-              alt=""
-              className="w-full sm:w-1/2 "
+              className="w-full md:w-1/2 mdl:w-[400px]"
             />
             <Image
               src={`/image/service1.png`}
+              alt="service image"
               width={400}
               height={0}
-              alt=""
-              className="w-full sm:w-1/2"
+              className="w-full md:w-1/2 mdl:w-[400px]"
             />
           </div>
         </div>
@@ -150,4 +124,4 @@ function WebDevelopement() {
   );
 }
 
-export default WebDevelopement;
+export default webDevelopement;

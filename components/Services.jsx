@@ -177,7 +177,7 @@ const Services = () => {
   ];
   return (
     <div
-      className=" w-full mt-14px px-10   pt-20 sm:px-10  max-h-[250vh] items-center justify-center"
+      className=" w-full mt-14px px-10   pt-20 sm:px-10  max-h-[300vh] items-center justify-center"
       id="service"
     >
       <div className="relative py-10  flex-col gap-10 sm:gap-20 overflow-hidden bg-[#EEEEEE] flex max-w-7xl sm:flex-row mx-auto z-50 px-10 sm:px-20 sm:py-20  ">
