@@ -58,7 +58,7 @@ const CaseStudies = () => {
                   <span className="font-outfit">{item.date}</span>
                 </div>
 
-                <Image src={item.image} alt="" width={300} height={0} />
+                <Image src={item.image} alt="" width={400} height={0} />
               </div>
               <div className="flex flex-col">
                 <span className="text-[#56697A] text-[12px] font-outfit">

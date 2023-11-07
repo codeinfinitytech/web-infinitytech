@@ -12,7 +12,7 @@ const WebMobile = () => {
           >
             Web & mobile app <br /> development
           </h1>
-          <span className="text-sm font-medium font-outfit">
+          <span className="text-sm font-medium font-outfit text-black">
             Someone is aware of our business.
           </span>
 

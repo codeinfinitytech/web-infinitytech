@@ -46,16 +46,16 @@ function DataProtection() {
         </div>
         <div className="flex flex-col w-full mdl:w-1/2 p-4">
           <div className="grid grid-cols-2 sml:grid-cols-4 gap-4 w-full">
-            <button className="py-4 px-2 min-w-[100px] text-[12px] text-white bg-gray-900 rounded-md">
+            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black bg-[#EEEEEE] rounded-md">
               Web and apps
             </button>
-            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-gray-900 rounded-md">
+            <button className="py-4 px-2 min-w-[100px] text-[12px]  border border-[#EEEEEE] rounded-md">
               Payment gateways
             </button>
-            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-gray-900 rounded-md">
+            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-[#EEEEEE]  rounded-md">
               Web and apps
             </button>
-            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-gray-900  rounded-md">
+            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-[#EEEEEE]   rounded-md">
               Web and apps
             </button>
           </div>

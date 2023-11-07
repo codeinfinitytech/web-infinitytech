@@ -210,7 +210,7 @@ const Services = () => {
           <h1 className="text-3xl font-bold text-[#56697A] mb-1 leading-none font-outfit">
             Our Services
           </h1>
-          <p className="text-[14px] text-base font-light w-full font-outfit ">
+          <p className="text-[14px] text-black text-base font-light w-full font-outfit ">
             Explore our comprehensive range of services designed to meet your
             needs and exceed your expectations. F
           </p>

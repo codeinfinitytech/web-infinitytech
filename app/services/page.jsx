@@ -193,7 +193,7 @@ const page = () => {
         <h1 className="text-[40px] text-center text-[#5F7487] font-bold leading-10 mt-10">
           "Creating Tomorrow's <br /> Technology with a Smile!"
         </h1>
-        <div className="max-w-6xl mt-10 sm:mt-0  sm:grid-cols-2 md:gap-10 lg:grid-cols-3 grid  flex-1">
+        <div className="max-w-7xl w-full px-40  justify-center items-center  mt-10 sm:mt-0  sm:grid-cols-2 md:gap-10 lg:grid-cols-3 grid  flex-1">
           {services1.map((item) => (
             <div
               key={item.id}
@@ -205,7 +205,7 @@ const page = () => {
               <h4 className="text-[#292D32] text-[18px] font-medium mt-2 font-outfit ">
                 {item.name}
               </h4>
-              <p className=" max-w-[200px] text-[14px] text-[#848484] font-normal line-clamp-2 w-full font-outfit">
+              <p className=" max-w-[220px] text-[14px] text-[#848484] font-normal line-clamp-2 w-full font-outfit">
                 {item.disc}
               </p>
               <a href="#">
