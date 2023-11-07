@@ -1,9 +1,22 @@
 "use client";
+import { requestToBodyStream } from "next/dist/server/body-streams";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 function Navbar2() {
   const [isOpen, setIsOPen] = useState(false);
+  let menuRef = useRef(null);
+  useEffect(() => {
+    document.addEventListener("click", handler, true);
+  }, []);
+  const handler = (e) => {
+    if (!menuRef.current.contains(e.target)) {
+      setIsOPen(false);
+    } else {
+      console.log("clicled inside");
+    }
+  };
+
   return (
     <div className=" max-w-7xl h-fit mx-auto mt-5 items-center px-6 sm:px-10 md:px-20 w-full flex justify-between">
       <a href="/">
@@ -42,10 +55,10 @@ function Navbar2() {
 
       {isOpen ? (
         <div
+          ref={menuRef}
           className={
             "absolute z-20 flex md:hidden  px-10 py-10  bg-[#56697A] right-0 top-20 rounded-l-lg "
           }
-          onClick={() => setIsOPen(true)}
         >
           <div className="flex text-white flex-col gap-4  text-[18px]">
             <a href="/">Home</a>
