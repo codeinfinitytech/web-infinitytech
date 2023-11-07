@@ -189,7 +189,7 @@ const page = () => {
   return (
     <main className="flex flex-col justify-center">
       <Navbar2 />
-      <div className="flex flex-col gap-6 justify-center w-full items-center ">
+      <div className="flex flex-col gap-16 justify-center w-full items-center py-10 ">
         <h1 className="text-[40px] text-center text-[#5F7487] font-bold leading-10 mt-10">
           "Creating Tomorrow's <br /> Technology with a Smile!"
         </h1>

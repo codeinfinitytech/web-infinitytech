@@ -43,7 +43,7 @@ const Navbar = () => {
       {isOpen ? (
         <div
           className={
-            "absolute z-20 flex md:hidden w-1/2 px-10 pt-10 h-[40vh] bg-[#56697A] right-0 top-20 rounded-l-lg "
+            "absolute z-20 flex md:hidden  px-10 py-10  bg-[#56697A] right-0 top-20 rounded-l-lg "
           }
           onClick={() => setIsOPen(true)}
         >

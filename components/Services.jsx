@@ -177,10 +177,10 @@ const Services = () => {
   ];
   return (
     <div
-      className=" w-full mt-14px px-10   pt-20 sm:px-10  max-h-[300vh] items-center justify-center"
+      className=" w-full mt-14px px-2 md:px-10   pt-20 sm:px-10  max-h-[300vh] items-center justify-center"
       id="service"
     >
-      <div className="relative py-10  flex-col gap-10 sm:gap-20 overflow-hidden bg-[#EEEEEE] flex max-w-7xl sm:flex-row mx-auto z-50 px-10 sm:px-20 sm:py-20  ">
+      <div className="relative py-10  flex-col gap-10 sm:gap-20 overflow-hidden bg-[#EEEEEE] flex max-w-7xl medium:flex-row mx-auto z-50 px-10 sm:px-20 sm:py-20  ">
         <div className="absolute left-0 top-0 -z-10">
           <svg
             width="244"
@@ -225,7 +225,7 @@ const Services = () => {
           {services1.map((item) => (
             <div
               key={item.id}
-              className="flex items-start flex-col gap-2 group cursor-pointer "
+              className="flex items-start flex-col min-w-[150px] gap-2 group cursor-pointer "
             >
               <div className="flex h-14 max-w-1/2 items-center justify-center ">
                 {item.image}

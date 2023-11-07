@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div className="sm:max-w-sm mx-auto w-full flex flex-col gap-4">
+    <div className="sm:max-w-lg mx-auto w-full flex flex-col gap-4">
       <input
         type="text"
         className=" bg-[#63798D] rounded-lg py-3 px-5 outline-none text-white placeholder:text-white w-full"

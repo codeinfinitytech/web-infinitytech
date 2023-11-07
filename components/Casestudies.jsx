@@ -30,7 +30,7 @@ const CaseStudies = () => {
     },
   ];
   return (
-    <div className="max-w-6xl mx-auto flex px-10 justify-center py-20 w-full max-h-[260vh]">
+    <div className="max-w-6xl mx-auto flex px-10 justify-center py-20 w-full ">
       <div className=" flex flex-col items-center gap-10">
         <div>
           <a

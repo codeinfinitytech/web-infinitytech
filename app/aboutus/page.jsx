@@ -51,11 +51,11 @@ function AboutusPage() {
         <h1 className="text-[30px] md:text-[40px] text-[#5F7487] font-bold">
           Meet Our Team
         </h1>
-        <div className=" grid gap-x-10 grid-cols-2 md:grid-cols-4 md">
+        <div className=" grid gap-x-10 gap-y-4 grid-cols-2 md:grid-cols-4 md">
           <div className="flex flex-col gap-2">
             <Image src={`/image/member.png`} alt="" width={200} height={100} />
             <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[600]">
+              <h1 className="text-[18px] md:text-[24px] font-[400]">
                 Nate Blaese
               </h1>
               <span className="text-[18px] text-[#292D32]">Developer</span>
@@ -64,7 +64,7 @@ function AboutusPage() {
           <div className="flex flex-col gap-2">
             <Image src={`/image/member.png`} alt="" width={200} height={100} />
             <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[600]">
+              <h1 className="text-[18px] md:text-[24px] font-[400]">
                 Nate Blaese
               </h1>
               <span className="text-[18px] text-[#292D32]">Developer</span>
@@ -73,7 +73,7 @@ function AboutusPage() {
           <div className="flex flex-col gap-2">
             <Image src={`/image/member.png`} alt="" width={200} height={100} />
             <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[600]">
+              <h1 className="text-[18px] md:text-[24px] font-[400]">
                 Nate Blaese
               </h1>
               <span className="text-[18px] text-[#292D32]">Developer</span>
@@ -82,7 +82,7 @@ function AboutusPage() {
           <div className="flex flex-col gap-2">
             <Image src={`/image/member.png`} alt="" width={200} height={100} />
             <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[600]">
+              <h1 className="text-[18px] md:text-[24px] font-[400]">
                 Nate Blaese
               </h1>
               <span className="text-[18px] text-[#292D32]">Developer</span>
@@ -91,7 +91,7 @@ function AboutusPage() {
           <div className="flex flex-col gap-2">
             <Image src={`/image/member.png`} alt="" width={200} height={100} />
             <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[600]">
+              <h1 className="text-[18px] md:text-[24px] font-[400]">
                 Nate Blaese
               </h1>
               <span className="text-[18px] text-[#292D32]">Developer</span>
@@ -100,7 +100,7 @@ function AboutusPage() {
           <div className="flex flex-col gap-2">
             <Image src={`/image/member.png`} alt="" width={200} height={100} />
             <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[600]">
+              <h1 className="text-[18px] md:text-[24px] font-[400]">
                 Nate Blaese
               </h1>
               <span className="text-[18px] text-[#292D32]">Developer</span>
@@ -109,7 +109,7 @@ function AboutusPage() {
           <div className="flex flex-col gap-2">
             <Image src={`/image/member.png`} alt="" width={200} height={100} />
             <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[600]">
+              <h1 className="text-[18px] md:text-[24px] font-[400]">
                 Nate Blaese
               </h1>
               <span className="text-[18px] text-[#292D32]">Developer</span>
@@ -118,7 +118,7 @@ function AboutusPage() {
           <div className="flex flex-col gap-2">
             <Image src={`/image/member.png`} alt="" width={200} height={100} />
             <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[600]">
+              <h1 className="text-[18px] md:text-[24px] font-[400]">
                 Nate Blaese
               </h1>
               <span className="text-[18px] text-[#292D32]">Developer</span>

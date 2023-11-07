@@ -22,7 +22,7 @@ function WhatSay() {
             </span>
           </div>
           <div className="flex flex-col gap-2">
-            <span className="text-[18px] font-semibold font-outfit">
+            <span className="text-[18px] font-[400]  font-outfit">
               Ishimwe Jean
             </span>
             <span className="text-[16px] text-[#626262] font-outfit">
@@ -62,12 +62,12 @@ function WhatSay() {
         </div>
       </div>
 
-      <div className="w-full md:max-w-1/2 items-center flex  flex-col justify-between px-20 py-[70px]">
+      <div className="w-full md:max-w-1/2 items-center flex  flex-col justify-between px-2 py-[70px]">
         <h1 className=" font-outfit text-[24px] text-center text-[#F59620] font-bold">
           WHAT THEY SAY ABOUT US
         </h1>
 
-        <div className=" grid grid-cols-1  sm:grid-flow-cols-2  md:grid-cols-2   gap-y-20 py-10 ">
+        <div className=" grid grid-cols-1     sm:grid-cols-2  gap-x-4   lg:gap-x-10 gap-y-20 py-10 ">
           {/* start part */}
           <div className="flex gap-2 max-h-[20vh] items-center max-w-[300px]">
             <div>
@@ -79,10 +79,10 @@ function WhatSay() {
               />
             </div>
             <div className="flex flex-col justify-evenly py-2">
-              <span className="text-[16px] font-semibold font-outfit">
+              <span className="text-[16px] font-[400]  font-outfit">
                 Ishimwe Jean
               </span>
-              <span className="text-[16px] text-[#626262] font-outfit">
+              <span className="text-[16px] font-[200] text-[#626262] font-outfit">
                 CEO TUZA
               </span>
             </div>
@@ -97,10 +97,10 @@ function WhatSay() {
               />
             </div>
             <div className="flex flex-col justify-evenly py-1">
-              <span className="text-[16px] font-semibold font-outfit">
+              <span className="text-[16px] font-[400]   font-outfit">
                 Ishimwe Jean
               </span>
-              <span className="text-[16px] text-[#626262] font-outfit">
+              <span className="text-[16px] font-[200] text-[#626262] font-outfit">
                 CEO TUZA
               </span>
             </div>
@@ -116,10 +116,46 @@ function WhatSay() {
               />
             </div>
             <div className="flex flex-col justify-evenly py-1">
-              <span className="text-[16px]  font-semibold font-outfit">
+              <span className="text-[16px] font-[400]   font-outfit">
                 Ishimwe Jean
               </span>
-              <span className="text-[16px] text-[#626262] font-outfit">
+              <span className="text-[16px] font-[200] text-[#626262] font-outfit">
+                CEO TUZA
+              </span>
+            </div>
+          </div>
+          <div className="flex gap-4 max-h-[20vh]  items-center max-w-[300px]">
+            <div>
+              <Image
+                src={`/image/profile2.png`}
+                alt="profile 2"
+                width={60}
+                height={60}
+              />
+            </div>
+            <div className="flex flex-col justify-evenly py-1">
+              <span className="text-[16px] font-[400]  font-outfit">
+                Ishimwe Jean
+              </span>
+              <span className="text-[16px] font-[200] text-[#626262] font-outfit">
+                CEO TUZA
+              </span>
+            </div>
+          </div>
+          <div className="flex gap-4 max-h-[20vh]  items-center max-w-[300px]">
+            <div>
+              <Image
+                src={`/image/profile2.png`}
+                alt="profile 2"
+                width={60}
+                height={60}
+              />
+            </div>
+            <div className="flex flex-col justify-evenly py-1">
+              <span className="text-[16px] font-[400]  font-outfit">
+                Ishimwe Jean
+              </span>
+              <span className="text-[16px] font-[200] text-[#626262] font-outfit">
                 CEO TUZA
               </span>
             </div>
@@ -134,46 +170,12 @@ function WhatSay() {
               />
             </div>
             <div className="flex flex-col justify-evenly py-1">
-              <span className="text-[16px] font-semibold font-outfit">
+              <span className="text-[16px] font-[400]   font-outfit">
                 Ishimwe Jean
               </span>
-              <span className="text-[16px] text-[#626262] font-outfit">
+              <span className="text-[16px] font-[200] text-[#626262]">
                 CEO TUZA
               </span>
-            </div>
-          </div>
-          <div className="flex gap-4 max-h-[20vh] items-center max-w-[300px]">
-            <div>
-              <Image
-                src={`/image/profile2.png`}
-                alt="profile 2"
-                width={60}
-                height={60}
-              />
-            </div>
-            <div className="flex flex-col justify-evenly py-1">
-              <span className="text-[16px] font-semibold font-outfit">
-                Ishimwe Jean
-              </span>
-              <span className="text-[16px] text-[#626262] font-outfit">
-                CEO TUZA
-              </span>
-            </div>
-          </div>
-          <div className="flex gap-4 max-h-[20vh] items-center max-w-[300px]">
-            <div>
-              <Image
-                src={`/image/profile2.png`}
-                alt="profile 2"
-                width={60}
-                height={60}
-              />
-            </div>
-            <div className="flex flex-col justify-evenly py-1">
-              <span className="text-[16px] font-semibold  font-outfit">
-                Ishimwe Jean
-              </span>
-              <span className="text-[16px] text-[#626262]">CEO TUZA</span>
             </div>
           </div>
         </div>
