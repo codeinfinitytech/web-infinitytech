@@ -233,7 +233,7 @@ const Services = () => {
               <h4 className="text-[#292D32] text-[18px] font-medium mt-2 font-outfit ">
                 {item.name}
               </h4>
-              <p className=" text-[14px] font-normal line-clamp-2 w-full font-outfit">
+              <p className=" text-[14px] text-[#292D32] font-normal line-clamp-2 w-full font-outfit">
                 {item.disc}
               </p>
               <a href="#">
