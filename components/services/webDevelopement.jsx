@@ -34,7 +34,7 @@ function webDevelopement() {
             </svg>
           </div>
           <div className="flex flex-col w-full  gap-4">
-            <p className="text-[18px] line-clamp-6">
+            <p className="text-[18px] line-clamp-6 text-black">
               Lorem ipsum dolor sit amet consectetur. Est risus tellus lectus
               volutpat feugiat ultrices. Nulla facilisis varius nisi justo ipsum
               amet enim. Eu vel iaculis et cursus fermentum nullam malesuada
@@ -45,7 +45,9 @@ function webDevelopement() {
               amet aliquet nisi aenean.
             </p>
             <div className="flex flex-col gap-2">
-              <h1 className="text-[18px] font-[600]">Out Technologies</h1>
+              <h1 className="text-[18px] font-[600] text-black">
+                Out Technologies
+              </h1>
               <div className="flex gap-4">
                 <div className="flex flex-col">
                   <Image
@@ -54,7 +56,7 @@ function webDevelopement() {
                     width={30}
                     height={0}
                   />
-                  <span>React js</span>
+                  <span className="text-black">React js</span>
                 </div>
                 <div className="flex flex-col">
                   <Image
@@ -63,7 +65,7 @@ function webDevelopement() {
                     width={30}
                     height={0}
                   />
-                  <span>React js</span>
+                  <span className="text-black">React js</span>
                 </div>
                 <div className="flex flex-col">
                   <Image
@@ -72,7 +74,7 @@ function webDevelopement() {
                     width={30}
                     height={0}
                   />
-                  <span>React js</span>
+                  <span className="text-black">React js</span>
                 </div>
                 <div className="flex flex-col">
                   <Image
@@ -81,7 +83,7 @@ function webDevelopement() {
                     width={30}
                     height={0}
                   />
-                  <span>React js</span>
+                  <span className="text-black">React js</span>
                 </div>
               </div>
             </div>

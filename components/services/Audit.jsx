@@ -66,7 +66,7 @@ function Audit() {
             </svg>
           </div>
           <div className="flex flex-col w-full  gap-4">
-            <p className="text-[18px] line-clamp-6">
+            <p className="text-[18px] line-clamp-6 text-black">
               Lorem ipsum dolor sit amet consectetur. Est risus tellus lectus
               volutpat feugiat ultrices. Nulla facilisis varius nisi justo ipsum
               amet enim. Eu vel iaculis et cursus fermentum nullam malesuada
