@@ -193,35 +193,21 @@ const page = () => {
         <h1 className="text-[40px] text-center text-[#5F7487] font-bold leading-10 mt-10">
           "Creating Tomorrow's <br /> Technology with a Smile!"
         </h1>
-        <div className="max-w-7xl w-full px-40  justify-center items-center  mt-10 sm:mt-0  sm:grid-cols-2 md:gap-10 lg:grid-cols-3 grid  flex-1">
+        <div className="max-w-7xl w-full px-10 md:px-40  justify-center items-center gap-y-10  mt-10 sm:mt-0  sm:grid-cols-2 md:gap-10 lg:grid-cols-3 grid  flex-1">
           {services1.map((item) => (
             <div
               key={item.id}
-              className="flex items-start flex-col  group cursor-pointer "
+              className="flex items-center flex-col  group cursor-pointer "
             >
               <div className="flex max-w-1/2 items-center justify-center ">
                 {item.image}
               </div>
-              <h4 className="text-[#292D32] text-[18px] font-medium mt-2 font-outfit ">
+              <h4 className="text-[#292D32] text-center text-[18px] font-medium mt-2 font-outfit ">
                 {item.name}
               </h4>
-              <p className=" max-w-[220px] text-[14px] text-[#848484] font-normal line-clamp-2 w-full font-outfit">
+              <p className=" max-w-[220px] text-[14px] text-center text-[#848484] font-normal line-clamp-2 w-full font-outfit">
                 {item.disc}
               </p>
-              <a href="#">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M4 11.7257C4 11.346 4.28215 11.0322 4.64823 10.9826L4.75 10.9757L17.934 10.9763L13.171 6.23278C12.8775 5.94051 12.8765 5.46564 13.1687 5.17212C13.4344 4.90528 13.851 4.88018 14.1451 5.0974L14.2294 5.16983L20.2794 11.1938C20.3181 11.2324 20.3517 11.2741 20.3802 11.3181C20.3883 11.3313 20.3965 11.3449 20.4042 11.3587C20.4114 11.3706 20.4178 11.3829 20.4239 11.3953C20.4324 11.4134 20.4407 11.4322 20.4482 11.4512C20.4543 11.466 20.4594 11.4803 20.464 11.4947C20.4696 11.5126 20.4749 11.5317 20.4796 11.551C20.483 11.5646 20.4857 11.5776 20.4881 11.5906C20.4914 11.6101 20.4943 11.6302 20.4963 11.6505C20.498 11.666 20.4991 11.6814 20.4997 11.6968C20.4998 11.7061 20.5 11.7159 20.5 11.7257L20.4996 11.7548C20.4991 11.7695 20.498 11.7842 20.4966 11.7989L20.5 11.7257C20.5 11.773 20.4956 11.8193 20.4872 11.8642C20.4853 11.875 20.483 11.886 20.4804 11.8969C20.4751 11.9195 20.4689 11.9412 20.4618 11.9626C20.4584 11.9732 20.4543 11.9845 20.45 11.9957C20.4412 12.0183 20.4317 12.0398 20.4212 12.0607C20.4163 12.0706 20.4109 12.0809 20.4052 12.0911C20.3958 12.1078 20.3861 12.1236 20.3759 12.139C20.3687 12.15 20.3607 12.1613 20.3524 12.1725L20.3459 12.1812C20.3257 12.2075 20.3038 12.2326 20.2803 12.256L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.596 13.0982 17.3028L13.171 17.2189L17.932 12.4763L4.75 12.4757C4.33579 12.4757 4 12.1399 4 11.7257Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
             </div>
           ))}
         </div>

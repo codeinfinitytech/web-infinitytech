@@ -214,8 +214,20 @@ const Services = () => {
             Explore our comprehensive range of services designed to meet your
             needs and exceed your expectations. F
           </p>
-          <button className="flex items-start justify-between  gap-2 mt-6 py-2.5 px-4 w-fit max-w-[200px] font-outfit  rounded-md text-white bg-[#F59620] group transition-all duration-300">
-            Discover More
+          <button className="flex items-center justify-between  gap-2 mt-6 py-2.5 px-4 w-fit max-w-[200px] font-outfit  rounded-md text-white bg-[#F59620] group transition-all duration-300">
+            Discover More{" "}
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.64143 16.2753C6.41954 16.0534 6.39937 15.7061 6.58092 15.4615L6.64143 15.3914L12.0325 9.99998L6.64143 4.60859C6.41954 4.3867 6.39937 4.03948 6.58092 3.7948L6.64143 3.7247C6.86332 3.50282 7.21054 3.48264 7.45522 3.66419L7.52532 3.7247L13.3586 9.55804C13.5805 9.77993 13.6007 10.1271 13.4192 10.3718L13.3586 10.4419L7.52532 16.2753C7.28124 16.5193 6.88551 16.5193 6.64143 16.2753Z"
+                fill="white"
+              />
+            </svg>
           </button>
         </div>
         {/* our services */}

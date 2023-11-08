@@ -41,11 +41,11 @@ const ContactUs = () => {
           </svg>
         </div>
 
-        <div className="flex z-40   flex-col w-full py-20 md:p-10 gap-10  bg-transparent  items-center justify-center">
+        <div className="flex z-40   flex-col w-full py-20  md:p-10 gap-10  bg-transparent items-start  md:items-center md:justify-center">
           <h1 className="text-[#F59620] text-[32px] font-bold font-outfit ">
             Get In Touch With us
           </h1>
-          <div className="flex flex-col  lg:flex-row  justify-center items-center gap-10">
+          <div className="flex flex-col  lg:flex-row items-start  md:justify-center md:items-center gap-10">
             <div className="flex flex-col  w-[80%]  h-full  gap-4">
               <div className="flex gap-2">
                 <span className="text-[16px] md:text-[18px] text-white">
@@ -57,8 +57,8 @@ const ContactUs = () => {
               <div className="flex gap-2 justify-center ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="34"
+                  height="34"
                   viewBox="0 0 24 24"
                   fill="none"
                 >
@@ -77,8 +77,8 @@ const ContactUs = () => {
               <div className="flex gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="34"
+                  height="34"
                   viewBox="0 0 24 24"
                   fill="none"
                 >

@@ -54,6 +54,18 @@ function OurWorks() {
       date: "June 2023",
     },
   ];
+  const [activeButton, setActiveButton] = useState(0);
+
+  const handleButtonClick = (buttonId) => {
+    setActiveButton(buttonId);
+  };
+  const buttonLable = [
+    "web and apps",
+    "payement gateways",
+    "UI/UX design",
+    "web and apps",
+  ];
+
   return (
     <div>
       {/* navbar */}
@@ -67,18 +79,17 @@ function OurWorks() {
           Dreams into Digital Reality
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-4">
-          <button className="flex bg-[#F59620] text-white px-[40px] py-4 rounded-md">
-            Mobile app
-          </button>
-          <button className="flex text-black px-[40px] py-4 rounded-md">
-            Website
-          </button>
-          <button className="flex text-black px-[40px] py-4 rounded-md">
-            UI/UX design
-          </button>
-          <button className="flex text-black px-[40px] py-4 rounded-md">
-            Dashboard
-          </button>
+          {buttonLable.map((item, index) => (
+            <button
+              key={index}
+              onClick={() => handleButtonClick(index)}
+              className={`flex ${
+                activeButton === index ? "bg-[#F59620] text-white" : ""
+              }   px-[40px] py-4 text-black rounded-md`}
+            >
+              {item}
+            </button>
+          ))}
         </div>
         {/* orur project */}
         <div className="grid  sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-x-10 mt-5 md:gap-y-4 items-center pb-10">

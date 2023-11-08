@@ -1,25 +1,36 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 function SystemAnalysis() {
+  const [activeButton, setActiveButton] = useState(0);
+
+  const handleButtonClick = (buttonId) => {
+    setActiveButton(buttonId);
+  };
+  const buttonLable = [
+    "web and apps",
+    "payement gateways",
+    "UI/UX design",
+    "web and apps",
+  ];
   return (
     <div className="flex w-full flex-col items-center justify-center gap-10">
       <h1 className="text-[32px] text-[#F59620] font-[600]">System Analysis</h1>
       <div className="flex flex-col mdl:flex-row w-full max-w-7xl">
-        <div className="flex flex-col w-full mdl:w-1/2 p-4">
+        <div className="flex flex-col w-full mdl:w-1/2 px-2">
           <div className="grid grid-cols-2 sml:grid-cols-4 gap-4 w-full">
-            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black bg-[#EEEEEE] rounded-md">
-              Web and apps
-            </button>
-            <button className="py-4 px-2 min-w-[100px] text-[12px]  border border-[#EEEEEE] rounded-md">
-              Payment gateways
-            </button>
-            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-[#EEEEEE]  rounded-md">
-              Web and apps
-            </button>
-            <button className="py-4 px-2 min-w-[100px] text-[12px] text-black border border-[#EEEEEE]   rounded-md">
-              Web and apps
-            </button>
+            {buttonLable.map((item, index) => (
+              <button
+                key={index}
+                onClick={() => handleButtonClick(index)}
+                className={`py-4 px-2 min-w-[100px] text-[12px] text-black  rounded-md ${
+                  activeButton === index ? "bg-[#EEEEEE]" : ""
+                }`}
+              >
+                {item}
+              </button>
+            ))}
           </div>
           <div className="w-full flex flex-col md:flex-row gap-2 p-2 pt-6 sml:p-10 mdl:p-2 justify-center items-center  ">
             <Image
@@ -64,7 +75,7 @@ function SystemAnalysis() {
             </svg>
           </div>
           <div className="flex flex-col w-full  gap-4">
-            <p className="text-[18px] line-clamp-6 text-black">
+            <p className="text-[14px] line-clamp-6 leading-6 text-center md:text-start text-black font-[400]">
               Lorem ipsum dolor sit amet consectetur. Est risus tellus lectus
               volutpat feugiat ultrices. Nulla facilisis varius nisi justo ipsum
               amet enim. Eu vel iaculis et cursus fermentum nullam malesuada
