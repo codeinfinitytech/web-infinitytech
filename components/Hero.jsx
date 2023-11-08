@@ -5,8 +5,8 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="w-full flex flex-col items-center h-[100vh] bg-[#3e4b56]/70     justify-center">
-      <div className="bg-[#3e4b56] absolute opacity-90 -z-10 w-full h-full "></div>
+    <div className="w-full flex flex-col items-center h-[100vh]      justify-center">
+      <div className="bg-[#3e4b56] absolute opacity-90 -z-10 w-full h-full top-0 "></div>
       <div className="absolute h-full w-full flex items-center justify-center -z-20 overflow-hidden">
         <Image
           src={`/image/herroBack.png`}
