@@ -51,77 +51,141 @@ function AboutusPage() {
         <h1 className="text-[30px] md:text-[40px] text-[#5F7487] font-bold">
           Meet Our Team
         </h1>
-        <div className=" grid gap-x-10 gap-y-4 grid-cols-2 md:grid-cols-4 md">
+        <div className=" grid gap-x-10 gap-y-10 grid-cols-2 md:grid-cols-4 md">
           <div className="flex flex-col gap-2">
-            <Image src={`/image/member.png`} alt="" width={200} height={100} />
-            <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[400]">
+            <Image
+              src={`/image/member.png`}
+              alt=""
+              width={200}
+              height={100}
+              className="rounded-md"
+            />
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
                 Nate Blaese
               </h1>
-              <span className="text-[18px] text-[#292D32]">Developer</span>
+              <span className="text-[18px] font-[400] text-gray-700">
+                Developer
+              </span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <Image src={`/image/member.png`} alt="" width={200} height={100} />
-            <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[400]">
+            <Image
+              src={`/image/member.png`}
+              alt=""
+              width={200}
+              height={100}
+              className="rounded-md"
+            />
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
                 Nate Blaese
               </h1>
-              <span className="text-[18px] text-[#292D32]">Developer</span>
+              <span className="text-[18px] font-[400] text-gray-700">
+                Developer
+              </span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <Image src={`/image/member.png`} alt="" width={200} height={100} />
-            <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[400]">
+            <Image
+              src={`/image/member.png`}
+              alt=""
+              width={200}
+              height={100}
+              className="rounded-md"
+            />
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
                 Nate Blaese
               </h1>
-              <span className="text-[18px] text-[#292D32]">Developer</span>
+              <span className="text-[18px] font-[400] text-gray-700">
+                Developer
+              </span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <Image src={`/image/member.png`} alt="" width={200} height={100} />
-            <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[400]">
+            <Image
+              src={`/image/member.png`}
+              alt=""
+              width={200}
+              height={100}
+              className="rounded-md"
+            />
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
                 Nate Blaese
               </h1>
-              <span className="text-[18px] text-[#292D32]">Developer</span>
+              <span className="text-[18px] font-[400] text-gray-700">
+                Developer
+              </span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <Image src={`/image/member.png`} alt="" width={200} height={100} />
-            <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[400]">
+            <Image
+              src={`/image/member.png`}
+              alt=""
+              width={200}
+              height={100}
+              className="rounded-md"
+            />
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
                 Nate Blaese
               </h1>
-              <span className="text-[18px] text-[#292D32]">Developer</span>
+              <span className="text-[18px] font-[400] text-gray-700">
+                Developer
+              </span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <Image src={`/image/member.png`} alt="" width={200} height={100} />
-            <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[400]">
+            <Image
+              src={`/image/member.png`}
+              alt=""
+              width={200}
+              height={100}
+              className="rounded-md"
+            />
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
                 Nate Blaese
               </h1>
-              <span className="text-[18px] text-[#292D32]">Developer</span>
+              <span className="text-[18px] font-[400] text-gray-700">
+                Developer
+              </span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <Image src={`/image/member.png`} alt="" width={200} height={100} />
-            <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[400]">
+            <Image
+              src={`/image/member.png`}
+              alt=""
+              width={200}
+              height={100}
+              className="rounded-md"
+            />
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
                 Nate Blaese
               </h1>
-              <span className="text-[18px] text-[#292D32]">Developer</span>
+              <span className="text-[18px] font-[400] text-gray-700">
+                Developer
+              </span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <Image src={`/image/member.png`} alt="" width={200} height={100} />
-            <div className="flex flex-col">
-              <h1 className="text-[18px] md:text-[24px] font-[400]">
+            <Image
+              src={`/image/member.png`}
+              alt=""
+              width={200}
+              height={100}
+              className="rounded-md"
+            />
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
                 Nate Blaese
               </h1>
-              <span className="text-[18px] text-[#292D32]">Developer</span>
+              <span className="text-[18px] font-[400] text-gray-700">
+                Developer
+              </span>
             </div>
           </div>
         </div>
