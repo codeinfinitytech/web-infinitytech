@@ -85,7 +85,7 @@ function OurWorks() {
               onClick={() => handleButtonClick(index)}
               className={`flex ${
                 activeButton === index ? "bg-[#F59620] text-white" : ""
-              }   px-[40px] py-4 text-black rounded-md`}
+              }  px-[30px] md:px-[40px] h-[60px] items-center justify-center text-black rounded-md`}
             >
               {item}
             </button>
