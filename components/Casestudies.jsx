@@ -64,7 +64,7 @@ const CaseStudies = () => {
                 <span className="text-[#56697A] text-[12px] font-outfit">
                   CLIENT: <span className="text-black">{item.client}</span>
                 </span>
-                <span className="text-[24px] font-bold font-outfit">
+                <span className="text-[24px] font-bold text-black font-outfit">
                   {item.name}
                 </span>
                 <span className="text-[#56697A] text-[14px] font-outfit">
