@@ -76,14 +76,12 @@ function SystemAnalysis() {
           </div>
           <div className="flex flex-col w-full  gap-4">
             <p className="text-[14px] line-clamp-6 leading-6 text-center md:text-start text-black font-[400]">
-              Lorem ipsum dolor sit amet consectetur. Est risus tellus lectus
-              volutpat feugiat ultrices. Nulla facilisis varius nisi justo ipsum
-              amet enim. Eu vel iaculis et cursus fermentum nullam malesuada
-              cursus. Proin risus in maecenas at luctus adipiscing amet
-              ullamcorper. Condimentum fermentum at tellus facilisis pulvinar.
-              Nisi eros viverra neque pulvinar malesuada id et in sem. Faucibus
-              quisque lacus rutrum eu purus accumsan at cursus hac. Convallis
-              amet aliquet nisi aenean.
+              We specialize in the meticulous analysis and optimization of
+              international IT systems, dedicated to elevating productivity and
+              streamlining operations for businesses on a global scale. Our
+              expertise transcends borders, allowing us to deliver tailored
+              solutions that drive operational excellence for international
+              enterprises.
             </p>
           </div>
         </div>

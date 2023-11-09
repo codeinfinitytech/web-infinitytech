@@ -46,15 +46,16 @@ function webDevelopement() {
             </svg>
           </div>
           <div className="flex flex-col w-full  gap-4">
-            <p className="text-[14px] text-center md:text-start line-clamp-6 leading-6 text-black font-[400]">
-              Lorem ipsum dolor sit amet consectetur. Est risus tellus lectus
-              volutpat feugiat ultrices. Nulla facilisis varius nisi justo ipsum
-              amet enim. Eu vel iaculis et cursus fermentum nullam malesuada
-              cursus. Proin risus in maecenas at luctus adipiscing amet
-              ullamcorper. Condimentum fermentum at tellus facilisis pulvinar.
-              Nisi eros viverra neque pulvinar malesuada id et in sem. Faucibus
-              quisque lacus rutrum eu purus accumsan at cursus hac. Convallis
-              amet aliquet nisi aenean.
+            <p className="text-[14px] text-center md:text-start line-clamp-6 leading-7 text-black font-[400]">
+              "Our worldwide web development services are a testament to our
+              commitment to crafting visually captivating and functionally
+              superior websites that authentically represent your global brand
+              and captivate audiences across the globe. At Infinity Tech
+              Solutions, our focus is on delivering web solutions that transcend
+              international borders. We create websites that are more than just
+              digital entities; they are the embodiment of your international
+              brand, designed to leave a profound impact on a global audience.
+              Discover the art of global web development with us."
             </p>
             <div className="flex flex-col gap-2">
               <h1 className="text-[18px] font-[600] text-black">

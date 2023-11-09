@@ -1,7 +1,13 @@
 "use client";
 import { ContactUs, Footer, Navbar2 } from "@/components";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+
+import Head from "next/head";
+
+const metadata = {
+  title: "Infinity-Tech About us",
+};
 
 function OurWorks() {
   const casestudies = [
@@ -69,7 +75,6 @@ function OurWorks() {
   return (
     <div>
       {/* navbar */}
-
       <Navbar2 />
 
       {/* end navbar */}

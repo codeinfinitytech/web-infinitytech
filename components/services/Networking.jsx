@@ -45,14 +45,11 @@ function Networking() {
           </div>
           <div className="flex flex-col w-full  gap-4">
             <p className="text-[14px] line-clamp-6 leading-6 text-center md:text-start text-black font-[400]">
-              Lorem ipsum dolor sit amet consectetur. Est risus tellus lectus
-              volutpat feugiat ultrices. Nulla facilisis varius nisi justo ipsum
-              amet enim. Eu vel iaculis et cursus fermentum nullam malesuada
-              cursus. Proin risus in maecenas at luctus adipiscing amet
-              ullamcorper. Condimentum fermentum at tellus facilisis pulvinar.
-              Nisi eros viverra neque pulvinar malesuada id et in sem. Faucibus
-              quisque lacus rutrum eu purus accumsan at cursus hac. Convallis
-              amet aliquet nisi aenean.
+              We are the catalyst for connecting global businesses through
+              streamlined networking solutions. Our mission is to facilitate
+              seamless international collaboration and communication. By
+              transcending geographical borders, we help businesses realize the
+              limitless potential of global connections.
             </p>
           </div>
         </div>

@@ -10,9 +10,10 @@ const Aboutus = () => {
               We assist businesses in telling successful tales.
             </span>
             <span className="px-4 md:px-0 text-white text-[16px] font-outfit font-[200] text-center lg:text-start lg:items-start">
-              Providing exceptional bespoke software solutions to startups,
-              small companies, medium enterprises, and major corporations across
-              all industries.
+              Are you ready to elevate your global business or profession to new
+              heights? Do you have international inquiries or simply want to say
+              hello? Please don't hesitate to reach out to us. We're here to
+              serve the diverse needs of our global clientele
             </span>
           </div>
           <div className="flex flex-col  items-center">

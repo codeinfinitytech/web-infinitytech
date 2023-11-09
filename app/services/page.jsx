@@ -10,6 +10,9 @@ import {
   WebDevelopement,
 } from "@/components";
 import React from "react";
+export const metadata = {
+  title: "Infinity-Tech Services",
+};
 
 const page = () => {
   const services1 = [

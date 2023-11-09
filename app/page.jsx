@@ -8,6 +8,9 @@ import {
   WhatSay,
 } from "@/components";
 import Hero from "@/components/Hero";
+export const metadata = {
+  title: "Infinity-Tech Home ",
+};
 
 export default function Home() {
   return (
