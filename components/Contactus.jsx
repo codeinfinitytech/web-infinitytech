@@ -49,9 +49,10 @@ const ContactUs = () => {
             <div className="flex flex-col  w-[80%]  h-full  gap-4">
               <div className="flex gap-2">
                 <span className="text-[16px] md:text-[18px] text-white">
-                  Are you ready to take your company or profession to the next
-                  level? Do you have any queries or just want to say hello?
-                  Please contact us at:-
+                  Are you ready to elevate your global business or profession to
+                  new heights? Do you have international inquiries or simply
+                  want to say hello? Please don't hesitate to reach out to us.
+                  We're here to serve the diverse needs of our global clientele.
                 </span>
               </div>
               <div className="flex gap-2 justify-center ">
