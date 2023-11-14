@@ -46,7 +46,7 @@ const page = () => {
           />
         </svg>
       ),
-      disc: "Subtract scrolling polygon reesizing clip undo undo pixel sta",
+      disc: "We excel in crafting visually stunning and functionally flawless websites that resonate on a global scale, reflecting the essence of your brand with international appeal",
     },
     {
       id: 2,
@@ -70,7 +70,7 @@ const page = () => {
           />
         </svg>
       ),
-      disc: "Subtract scrolling polygon reesizing clip undo undo pixel sta",
+      disc: "Our global expertise lies in optimizing IT systems for peak efficiency, ensuring that businesses worldwide operate at their full potential",
     },
     {
       id: 3,
@@ -106,7 +106,7 @@ const page = () => {
           />
         </svg>
       ),
-      disc: "Subtract scrolling polygon reesizing clip undo undo pixel sta",
+      disc: "At Infinity Tech Solutions, data security is our global priority. We implement robust strategies to safeguard your sensitive information on an international scale",
     },
     {
       id: 4,
@@ -138,7 +138,7 @@ const page = () => {
           />
         </svg>
       ),
-      disc: "Subtract scrolling polygon reesizing clip undo undo pixel sta",
+      disc: "Our internationally acclaimed experts provide profound insights and global guidance for optimizing IT infrastructure, a testament to our commitment to ensuring your business excels on the global stage",
     },
     {
       id: 5,
@@ -162,7 +162,7 @@ const page = () => {
           />
         </svg>
       ),
-      disc: "Subtract scrolling polygon reesizing clip undo undo pixel sta",
+      disc: " We connect businesses across borders to facilitate seamless international collaboration, creating a global network of opportunities",
     },
     {
       id: 6,

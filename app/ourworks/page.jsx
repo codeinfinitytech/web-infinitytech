@@ -78,7 +78,7 @@ function OurWorks() {
       <Navbar2 />
 
       {/* end navbar */}
-      <div className="flex flex-col gap-6 justify-center w-full items-center pt-20">
+      <div className="flex flex-col gap-6 justify-center w-full items-center pt-5">
         <h1 className="text-[40px] text-center text-[#5F7487] font-bold leading-10 ">
           Weaving <br />
           Dreams into Digital Reality

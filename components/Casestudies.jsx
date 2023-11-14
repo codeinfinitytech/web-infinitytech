@@ -14,9 +14,9 @@ const CaseStudies = () => {
     },
     {
       id: 2,
-      name: "Tuza podcast",
-      client: "Tuza Rwanda",
-      type: "UI/UX,Developement",
+      name: "Infinity Tech Driver",
+      client: "Infinity Tech solution",
+      type: "Web app Developement",
       image: `/image/project2.png`,
       date: "June 2023",
     },
