@@ -97,7 +97,7 @@ function OurWorks() {
           ))}
         </div>
         {/* orur project */}
-        <div className="grid  sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-x-10 mt-5 md:gap-y-4 items-center pb-10">
+        <div className="grid  sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-x-10 mt-5 md:gap-y-10 items-center pb-10">
           {casestudies.map((item) => (
             <div
               key={item.id}
@@ -120,7 +120,7 @@ function OurWorks() {
                 <span className="text-[#56697A] text-[14px] font-outfit">
                   {item.type}
                 </span>
-                <a href="#">
+                <a href="#" className="hover:ml-1 w-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
