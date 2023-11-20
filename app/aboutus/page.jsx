@@ -17,16 +17,16 @@ function AboutusPage() {
         <div className="mt-[50px]">
           <div className="relative  w-full gap-8  flex flex-col ">
             <div className="flex  max-w-7xl  justify-center flex-col gap-2 md:flex-row">
-              <div className="relative flex  gap-2   h-[300px]   px-4 sm:px-20 md:px-20 flex-col w-full md:w-1/2  ">
+              <div className="relative  flex  gap-2   max-h-[330px] md:max-h-[100vh] overflow-hidden   px-4 sm:px-20 md:px-20 flex-col w-full md:w-1/2  ">
                 <div className="flex  justify-center items-center md:items-start md:justify-start">
                   <button className="px-[30px]  py-2 rounded-md font-[900] bg-[#F5962052]">
                     Aboutus
                   </button>
                 </div>
-                <h1 className="text-2xl md:text-3xl text-center md:text-start text-[#5F7487] font-bold leading-6 md:leading-10">
+                <h1 className="text-2xl md:text-3xl text-center md:text-start text-[#5F7487] font-bold leading-6 md:leading-7">
                   "Creating Tomorrow's <br /> Technology with a Smile!"
                 </h1>
-                <p className="text-[14px] flex flex-col gap-2 text-center md:text-start font-light text-[#515151]  leading-5">
+                <p className="text-[14px] flex flex-col gap-1 text-center md:text-start font-light text-[#515151]  leading-5">
                   <span>
                     Infinity Tech Solutions: A Global Team of Committed
                     Professionals. Our unwavering mission is to empower

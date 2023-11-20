@@ -102,7 +102,7 @@ function webDevelopement() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-full mdl:w-1/2 px-2">
+        <div className="flex flex-col w-full mdl:w-1/2 px-2 py-6 md:py-0">
           <div className="grid grid-cols-2 sml:grid-cols-4 gap-4 w-full">
             {buttonLable.map((item, index) => (
               <button
