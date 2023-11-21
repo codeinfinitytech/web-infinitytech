@@ -9,18 +9,15 @@ function webDevelopement() {
     setActiveButton(buttonId);
   };
   const buttonLable = [
-    "web and apps",
-    "payement gateways",
-    "UI/UX design",
-    "web and apps",
+    "Web and Apps",
+    "Payement Gateways",
+    "UI/UX Design",
+    "Web and Apps",
   ];
   return (
     <div className="flex w-full flex-col items-center justify-center gap-10">
-      <h1 className="text-[32px] text-[#F59620] font-[600]">
-        Web Developement
-      </h1>
       <div className="flex flex-col mdl:flex-row w-full max-w-7xl">
-        <div className="relative flex flex-col w-full mdl:w-1/2 bg-[#EEEEEE] rounded-sm p-8 gap-4">
+        <div className="relative flex flex-col w-full mdl:w-1/2 bg-[#EEEEEE] rounded-sm p-8 px-16 gap-4">
           <div className="absolute bottom-0 left-0">
             <svg
               width="210"
@@ -45,9 +42,12 @@ function webDevelopement() {
               />
             </svg>
           </div>
-          <div className="flex flex-col w-full  gap-4">
-            <p className="text-[14px] text-center md:text-start line-clamp-6 leading-7 text-black font-[400]">
-              "Our worldwide web development services are a testament to our
+          <div className="flex flex-col w-full  gap-[10px]">
+            <h1 className="text-[32px] text-[#F59620] font-[600]">
+              Web Developement
+            </h1>
+            <p className="text-[16px] text-center md:text-start line-clamp-6 leading-7 text-black font-[400]">
+              Our worldwide web development services are a testament to our
               commitment to crafting visually captivating and functionally
               superior websites that authentically represent your global brand
               and captivate audiences across the globe. At Infinity Tech
@@ -103,20 +103,20 @@ function webDevelopement() {
           </div>
         </div>
         <div className="flex flex-col w-full mdl:w-1/2 px-2 py-6 md:py-0">
-          <div className="grid grid-cols-2 sml:grid-cols-4 gap-4 w-full">
+          <div className="grid grid-cols-2 sml:grid-cols-4  w-full">
             {buttonLable.map((item, index) => (
               <button
                 key={index}
                 onClick={() => handleButtonClick(index)}
-                className={`py-4 px-2 min-w-[100px] text-[12px] text-black  rounded-md ${
-                  activeButton === index ? "bg-[#EEEEEE]" : ""
+                className={`py-4 px-2 min-w-[100px] text-[14px] text-black  rounded-md ${
+                  activeButton === index ? "bg-orange-400" : ""
                 }`}
               >
                 {item}
               </button>
             ))}
           </div>
-          <div className="w-full flex flex-col md:flex-row gap-2 p-2 pt-6 sml:p-10 mdl:p-2 justify-center items-center  ">
+          <div className="w-full flex flex-col md:flex-row gap-2 p-2 pt-6 sml:p-10 mdl:p-1 mt-10 justify-center items-center  ">
             <Image
               src={`/image/service1.png`}
               alt="service image"
