@@ -16,16 +16,15 @@ function SystemAnalysis() {
   ];
   return (
     <div className="flex w-full flex-col items-center justify-center gap-10">
-      <h1 className="text-[32px] text-[#F59620] font-[600]">System Analysis</h1>
       <div className="flex flex-col mdl:flex-row w-full max-w-7xl">
-        <div className="flex flex-col w-full mdl:w-1/2 px-2">
-          <div className="grid grid-cols-2 sml:grid-cols-4 gap-4 w-full">
+        <div className="flex flex-col w-full mdl:w-1/2 px-2 gap-4">
+          <div className="grid grid-cols-2 sml:grid-cols-4  w-full">
             {buttonLable.map((item, index) => (
               <button
                 key={index}
                 onClick={() => handleButtonClick(index)}
-                className={`py-4 px-2 min-w-[100px] text-[12px] text-black  rounded-md ${
-                  activeButton === index ? "bg-[#EEEEEE]" : ""
+                className={`py-4 px-2 min-w-[100px] text-[14px] text-black  rounded-md ${
+                  activeButton === index ? "bg-orange-400" : ""
                 }`}
               >
                 {item}
@@ -50,6 +49,9 @@ function SystemAnalysis() {
           </div>
         </div>
         <div className="relative flex flex-col w-full mdl:w-1/2 bg-[#EEEEEE] rounded-sm p-8 gap-4 overflow-hidden">
+          <h1 className="text-[32px] text-[#F59620] font-[600]">
+            System Analysis
+          </h1>
           <div className="absolute bottom-0 right-0">
             <svg
               width="210"

@@ -16,18 +16,15 @@ function Audit() {
   ];
   return (
     <div className="flex w-full flex-col items-center justify-center gap-10">
-      <h1 className="text-[32px] text-[#F59620] font-[600]">
-        Audit & consultancys
-      </h1>
       <div className="flex flex-col mdl:flex-row w-full max-w-7xl">
         <div className="flex flex-col w-full mdl:w-1/2 px-2 ">
-          <div className="grid grid-cols-2 sml:grid-cols-4 gap-4 w-full">
+          <div className="grid grid-cols-2 sml:grid-cols-4  w-full">
             {buttonLable.map((item, index) => (
               <button
                 key={index}
                 onClick={() => handleButtonClick(index)}
-                className={`py-4 px-2 min-w-[100px] text-[12px] text-black  rounded-md ${
-                  activeButton === index ? "bg-[#EEEEEE]" : ""
+                className={`py-4 px-2 min-w-[100px] text-[14px] text-black  rounded-md ${
+                  activeButton === index ? "bg-orange-400" : ""
                 }`}
               >
                 {item}
@@ -77,7 +74,10 @@ function Audit() {
             </svg>
           </div>
           <div className="flex flex-col w-full  gap-4">
-            <p className="text-[14px] line-clamp-6 leading-6 text-center md:text-start text-black font-[400]">
+            <h1 className="text-[32px] text-[#F59620] font-[600]">
+              Audit & consultancys
+            </h1>
+            <p className="text-[16px] line-clamp-6 leading-6 text-center md:text-start text-black font-[400]">
               Our team of international experts specializes in providing
               profound insights and strategic guidance aimed at enhancing global
               IT infrastructure. With a keen focus on increasing efficiency and

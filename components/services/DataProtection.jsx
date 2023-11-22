@@ -16,7 +16,6 @@ function DataProtection() {
   ];
   return (
     <div className="flex w-full flex-col items-center justify-center gap-10">
-      <h1 className="text-[32px] text-[#F59620] font-[600]">Data Protection</h1>
       <div className="flex flex-col mdl:flex-row w-full max-w-7xl">
         <div className="relative flex flex-col w-full mdl:w-1/2 bg-[#EEEEEE] rounded-sm p-8 gap-4 overflow-hidden">
           <div className="absolute bottom-0 left-0">
@@ -43,8 +42,11 @@ function DataProtection() {
               />
             </svg>
           </div>
-          <div className="flex flex-col w-full  gap-4">
-            <p className="text-[14px] line-clamp-6 leading-6 text-center md:text-start text-black font-[400]">
+          <div className="flex flex-col w-full md:px-10 px-2  gap-4">
+            <h1 className="text-[32px] text-[#F59620] font-[600]">
+              Data Protection
+            </h1>
+            <p className="text-[16px] line-clamp-6 leading-6 text-center md:text-start text-black font-[400]">
               At Infinity Tech Solutions, data protection stands as a paramount
               global priority. Our unwavering commitment to safeguarding data
               remains a cornerstone of our international services. We implement
@@ -62,7 +64,7 @@ function DataProtection() {
                 key={index}
                 onClick={() => handleButtonClick(index)}
                 className={`py-4 px-2 min-w-[100px] text-[12px] text-black  rounded-md ${
-                  activeButton === index ? "bg-[#EEEEEE]" : ""
+                  activeButton === index ? "bg-orange-400" : ""
                 }`}
               >
                 {item}
