@@ -25,15 +25,16 @@ function Hero() {
             Innovate , Navigate, Elevate
           </p>
           <div className=" flex  gap-4 mt-6">
-            <button
+            <a
+              href="#contactus"
               className=" px-6 py-2 border border-[#F59620] text-[#F59620]
-             hover:text-white hover:bg-[#F59620]"
+             hover:text-white hover:bg-[#F59620] rounded-md"
             >
               Reach us
-            </button>
+            </a>
             <button
               className=" px-6 py-2 border border-[#F59620] text-white
-            bg-[#F59620]"
+            bg-[#F59620] rounded-md"
             >
               Our Work
             </button>

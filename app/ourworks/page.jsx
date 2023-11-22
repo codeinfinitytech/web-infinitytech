@@ -4,12 +4,13 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 import Head from "next/head";
+import { resolve } from "styled-jsx/css";
 
 const metadata = {
   title: "Infinity-Tech About us",
 };
 
-function OurWorks() {
+async function OurWorks() {
   const casestudies = [
     {
       id: 1,

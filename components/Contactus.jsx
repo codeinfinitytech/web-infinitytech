@@ -3,7 +3,7 @@ import Form from "./Form";
 
 const ContactUs = () => {
   return (
-    <div className=" relative ">
+    <div className=" relative " id="contactus">
       <div className="w-full relative flex px-2 sm:px-20 py-0 bg-[#56697A] justify-center">
         <div className="absolute top-0 left-0 z-20">
           <svg
@@ -57,7 +57,6 @@ const ContactUs = () => {
               </div>
               <div className="flex gap-2 justify-center ">
                 <svg
-                
                   xmlns="http://www.w3.org/2000/svg"
                   width="34"
                   height="34"

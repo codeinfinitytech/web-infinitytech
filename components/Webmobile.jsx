@@ -12,7 +12,7 @@ const WebMobile = () => {
           >
             Web & mobile app <br /> development
           </h1>
-          <span className="text-sm font-medium font-outfit text-black">
+          <span className="text-[16px] font-medium font-outfit text-black">
             Someone is aware of our business.
           </span>
 
@@ -23,7 +23,7 @@ const WebMobile = () => {
             app developers and UI/UX designers can assist
           </p>
 
-          <button className="flex items-center justify-between  text-white py-3.5 px-5 w-fit gap-2 mt-6 group transition-all bg-[#F59620] duration-300">
+          <button className="flex items-center justify-between rounded-lg   text-white py-3.5 px-5 w-fit gap-2 mt-6 group transition-all bg-[#F59620] duration-300">
             {" "}
             Learn More{" "}
             <svg
