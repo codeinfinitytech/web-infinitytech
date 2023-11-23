@@ -81,7 +81,7 @@ const ContactUs = () => {
                 </svg>
                 <span className="text-[16px] md:text-[18px] text-white">
                   If you have an urgent business concern, please contact us at
-                  +25078**456
+                  0798735385/0722258777
                 </span>
               </div>
               <div className="flex gap-2">

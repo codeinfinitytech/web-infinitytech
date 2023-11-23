@@ -74,137 +74,115 @@ function AboutusPage() {
         </h1>
         <div className=" grid gap-x-10 gap-y-10 grid-cols-2 md:grid-cols-4 md">
           <div className="flex flex-col gap-2">
-            <Image
-              src={`/image/member.png`}
-              alt=""
-              width={200}
-              height={100}
-              className="rounded-md"
-            />
+            <div className="w-[200px] h-[250px]">
+              <Image
+                src={`/image/albert.jpg`}
+                alt=""
+                width={200}
+                height={100}
+                className="rounded-md h-full object-cover"
+              />
+            </div>
             <div className="flex flex-col gap-[-12px]">
               <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
-                Nate Blaese
+                Albert Sentongo
               </h1>
               <span className="text-[18px] font-[400] text-gray-700">
+                Software Engineer
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="w-[200px] h-[250px]">
+              <Image
+                src={`/image/muhindo.jpg`}
+                alt=""
+                width={200}
+                height={100}
+                className="rounded-md h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+                Muhindo Mussa
+              </h1>
+              <span className="text-[18px] font-[400] text-gray-700">
+                IT Director
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="w-[200px] h-[250px]">
+              <Image
+                src={`/image/samuel.jpg`}
+                alt=""
+                width={200}
+                height={100}
+                className="rounded-md h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+                Samuel Ishimwe
+              </h1>
+              <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
+                Module Lead at Infinity Tech Solution
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="w-[200px] h-[250px]">
+              <Image
+                src={`/image/edson.jpg`}
+                alt=""
+                width={200}
+                height={100}
+                className="rounded-md h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+                Edson Ntwali
+              </h1>
+              <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
                 Developer
               </span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <Image
-              src={`/image/member.png`}
-              alt=""
-              width={200}
-              height={100}
-              className="rounded-md"
-            />
+            <div className="w-[200px] h-[250px]">
+              <Image
+                src={`/image/faustin.jpg`}
+                alt=""
+                width={200}
+                height={100}
+                className="rounded-md h-full object-cover"
+              />
+            </div>
             <div className="flex flex-col gap-[-12px]">
               <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
-                Nate Blaese
+                Faustin Iyaremye
               </h1>
-              <span className="text-[18px] font-[400] text-gray-700">
+              <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
                 Developer
               </span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <Image
-              src={`/image/member.png`}
-              alt=""
-              width={200}
-              height={100}
-              className="rounded-md"
-            />
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
-                Nate Blaese
-              </h1>
-              <span className="text-[18px] font-[400] text-gray-700">
-                Developer
-              </span>
+            <div className="w-[200px] h-[250px]">
+              <Image
+                src={`/image/eddy.jpg`}
+                alt=""
+                width={200}
+                height={100}
+                className="rounded-md h-full object-cover"
+              />
             </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <Image
-              src={`/image/member.png`}
-              alt=""
-              width={200}
-              height={100}
-              className="rounded-md"
-            />
             <div className="flex flex-col gap-[-12px]">
               <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
-                Nate Blaese
+                Eddy Irankunda
               </h1>
-              <span className="text-[18px] font-[400] text-gray-700">
-                Developer
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <Image
-              src={`/image/member.png`}
-              alt=""
-              width={200}
-              height={100}
-              className="rounded-md"
-            />
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
-                Nate Blaese
-              </h1>
-              <span className="text-[18px] font-[400] text-gray-700">
-                Developer
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <Image
-              src={`/image/member.png`}
-              alt=""
-              width={200}
-              height={100}
-              className="rounded-md"
-            />
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
-                Nate Blaese
-              </h1>
-              <span className="text-[18px] font-[400] text-gray-700">
-                Developer
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <Image
-              src={`/image/member.png`}
-              alt=""
-              width={200}
-              height={100}
-              className="rounded-md"
-            />
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
-                Nate Blaese
-              </h1>
-              <span className="text-[18px] font-[400] text-gray-700">
-                Developer
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <Image
-              src={`/image/member.png`}
-              alt=""
-              width={200}
-              height={100}
-              className="rounded-md"
-            />
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
-                Nate Blaese
-              </h1>
-              <span className="text-[18px] font-[400] text-gray-700">
+              <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
                 Developer
               </span>
             </div>
