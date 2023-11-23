@@ -126,8 +126,8 @@ function WhatSay() {
                 onClick={() => GoToWhatSay(index)}
                 key={index}
                 className={`${
-                  currentIndex === index ? "border-2 border-yellow-500/30" : ""
-                } rounded-md p-1 flex gap-2 max-h-[20vh] items-center max-w-[300px]`}
+                  currentIndex === index ? "border-2 bg-gray-200" : ""
+                } rounded-md p-1 flex gap-2 max-h-[20vh] items-center max-w-[300px] cursor-pointer hover:bg-gray-200`}
               >
                 <div className="w-16 h-16">
                   <Image
