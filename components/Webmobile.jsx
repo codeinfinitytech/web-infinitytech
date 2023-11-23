@@ -1,9 +1,18 @@
+"use client";
+import AOS from "aos";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 
 const WebMobile = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="max-w-6xl mx-auto mt-20 ">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      className="max-w-6xl mx-auto mt-20 "
+    >
       <div className="px-10 sm:px-0 sm:grid-cols-2 gap-20 grid  ">
         <div className="flex flex-col gap-3 pt-10">
           <h1

@@ -1,6 +1,12 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const services1 = [
     {
       id: 1,
@@ -180,7 +186,12 @@ const Services = () => {
       className=" w-full mt-14px px-2 md:px-10   pt-20 sm:px-10  max-h-[300vh] items-center justify-center"
       id="service"
     >
-      <div className="relative py-10  flex-col gap-10 sm:gap-20 overflow-hidden bg-[#EEEEEE] flex max-w-7xl medium:flex-row mx-auto z-50 px-10 sm:px-20 sm:py-20  ">
+      <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        className="relative py-10  flex-col gap-10 sm:gap-20 overflow-hidden bg-[#EEEEEE] flex max-w-7xl medium:flex-row mx-auto z-50 px-10 sm:px-20 sm:py-20  "
+      >
         <div className="absolute left-0 top-0 -z-10">
           <svg
             width="244"

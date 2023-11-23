@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion";
 
 import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="w-full flex flex-col items-center h-[100vh]     justify-center">
+    <div className="w-full flex flex-col items-center h-[100vh]  justify-center">
       <div className="bg-[#3e4b56] absolute opacity-90 top-0 -z-10 w-full h-full "></div>
       <div className="absolute h-full w-full flex items-center justify-center -z-20 overflow-hidden">
         <Image
@@ -17,7 +18,12 @@ function Hero() {
       </div>
       <Navbar />
       <div className="px-2 h-full mx-auto max-w-lg flex gap-[26px] mb-14">
-        <div className="flex flex-col items-center justify-center text-[20px] mt-6">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2 }}
+          className="flex flex-col items-center justify-center text-[20px] mt-6"
+        >
           <h1 className="text-[40px] sm:text-[56px] font-bold text-[#F59620]  text-center font-outfit leading-none ">
             Unlock the Power <br /> of Technology"
           </h1>
@@ -39,7 +45,7 @@ function Hero() {
               Our Work
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="pb-20">
         <a href="#service" className="text-center text-white">

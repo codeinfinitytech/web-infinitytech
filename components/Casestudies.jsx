@@ -1,8 +1,14 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Image from "next/image";
 
 const CaseStudies = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const casestudies = [
     {
       id: 1,
@@ -11,6 +17,7 @@ const CaseStudies = () => {
       type: "UI/UX,Developement",
       image: `/image/project1.png`,
       date: "June 2023",
+      dataAos: "fade-up",
     },
     {
       id: 2,
@@ -41,13 +48,17 @@ const CaseStudies = () => {
           </a>
         </div>
         <h1
+          data-aos="fade-left"
           className="text-[24px] sm:text-[36px] w-[300px] sm:w-[620px] text-center font-bold font-outfit"
           style={{ lineHeight: 1 }}
         >
           We develop products that address issues faced by customers.
         </h1>
 
-        <div className="grid  sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-20 items-center">
+        <div
+          data-aos="fade-right"
+          className="grid  sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-20 items-center"
+        >
           {casestudies.map((item) => (
             <div
               key={item.id}
