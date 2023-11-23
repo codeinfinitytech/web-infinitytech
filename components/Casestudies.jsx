@@ -12,19 +12,18 @@ const CaseStudies = () => {
   const casestudies = [
     {
       id: 1,
-      name: "Tuza podcast",
+      name: "Delivery App",
       client: "Tuza Rwanda",
-      type: "UI/UX,Developement",
-      image: `/image/project1.png`,
-      date: "June 2023",
-      dataAos: "fade-up",
+      type: "Mobile App Development",
+      image: `/image/deliveryApp.png`,
+      date: "Augst 2023",
     },
     {
       id: 2,
       name: "Infinity Tech Driver",
       client: "Infinity Tech solution",
-      type: "Web app Developement",
-      image: `/image/project2.png`,
+      type: "Mobile App Development",
+      image: `/image/driver.png`,
       date: "June 2023",
     },
     {
@@ -32,8 +31,8 @@ const CaseStudies = () => {
       name: "Tuza podcast",
       client: "Tuza Rwanda",
       type: "UI/UX,Developement",
-      image: `/image/project3.png`,
-      date: "June 2023",
+      image: `/image/goweb.png`,
+      date: "October 2023",
     },
   ];
   return (
@@ -52,7 +51,8 @@ const CaseStudies = () => {
           className="text-[24px] sm:text-[36px] w-[300px] sm:w-[620px] text-center font-bold font-outfit"
           style={{ lineHeight: 1 }}
         >
-          We develop products that address issues faced by customers.
+          We develop <span className="text-[#F59620]">products</span> that
+          address issues faced by customers.
         </h1>
 
         <div
@@ -64,12 +64,18 @@ const CaseStudies = () => {
               key={item.id}
               className="relative flex max-w-[100vh] flex-col gap-[20px]"
             >
-              <div className="max-h-[100vh]">
+              <div className="h-[60vh] ">
                 <div className=" absolute p-2 rounded-md mt-4  right-2 bg-[#FBECD8] text-[#F59620]">
                   <span className="font-outfit">{item.date}</span>
                 </div>
 
-                <Image src={item.image} alt="" width={400} height={0} />
+                <Image
+                  src={item.image}
+                  alt=""
+                  className="w-full h-full object-cover rounded-md"
+                  width={400}
+                  height={0}
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-[#56697A] text-[12px] font-outfit">

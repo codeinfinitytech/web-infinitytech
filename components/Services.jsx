@@ -38,7 +38,7 @@ const Services = () => {
           />
         </svg>
       ),
-      disc: "We excel in crafting visually stunning and functionally flawless websites that resonate on a global scale, reflecting the essence of your brand with international appeal.",
+      disc: "Design and develop a creative website with our microscopic detailing and scrupulous strategies.",
     },
     {
       id: 2,

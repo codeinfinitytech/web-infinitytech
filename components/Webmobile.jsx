@@ -21,6 +21,7 @@ const WebMobile = () => {
           >
             Web & mobile app <br /> development
           </h1>
+
           <span className="text-[16px] font-medium font-outfit text-black">
             Someone is aware of our business.
           </span>
@@ -86,14 +87,14 @@ const WebMobile = () => {
           </button>
 
           <Image
-            src={`/image/webapp2.png`}
+            src={`/image/website.png`}
             className="h-[400px] object-cover w-full rounded-lg"
             alt="dd"
             width={300}
             height={0}
           />
           <Image
-            src={`/image/webapp1.png`}
+            src={`/image/mobileapp.gif`}
             className=" absolute right-0 bottom-0 border-[15px] border-white"
             alt="dd"
             width={300}
