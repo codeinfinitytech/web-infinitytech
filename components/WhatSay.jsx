@@ -5,9 +5,21 @@ import React, { useState } from "react";
 function WhatSay() {
   const says = [
     {
-      url: `/image/pofile.png`,
-      disc: "Editor subtract rectangle auto project flatten content opacity hand horizontal. Effect pen draft subtract style background mainarrange ipsum. Pen editor arrange pen invite reesizing verticalduplicate. Pixel italic editor main project effect invite share.Hand strikethrough create vertical rectangle inspect auto",
-      name: "Isimwe Jean",
+      url: `/image/say1.jpg`,
+      disc: "Working with your team was a game-changer for our business! The website, mobile app, and dashboard your company developed are not just visually stunning but also incredibly user-friendly. Our customers love the seamless experience, and we've seen a significant increase in engagement since the launch.",
+      name: "Umuhoza Yvethe",
+      title: "Profession",
+    },
+    {
+      url: `/image/say2.jpg`,
+      disc: "Collaborating with your tech experts was a breeze. Our website, mobile app, and dashboard not only look fantastic but also perform flawlessly. The feedback from our users has been overwhelmingly positive, highlighting the user-centric design and the seamless integration of cutting-edge technologies.",
+      name: "Rukundo Christian",
+      title: "CEO TUZA",
+    },
+    {
+      url: `/image/say3.jpg`,
+      disc: "Impressed with the professionalism and technical expertise of your company. From conceptualizing our ideas to delivering a fully functional website, mobile app, and dashboard, the entire process was smooth. Your team's commitment to quality and innovation truly sets you apart in the tech industry",
+      name: "Ntwali Emma",
       title: "CEO TUZA",
     },
     {
@@ -25,6 +37,10 @@ function WhatSay() {
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const GoToWhatSay = (index) => {
+    setCurrentIndex(index);
+  };
+
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? says.length - 1 : currentIndex - 1;
@@ -39,7 +55,7 @@ function WhatSay() {
   return (
     <div className=" flex max-h-[250vh]  w-full flex-col md:flex-row ">
       <div className="w-full px-4 md:max-w-1/2 flex bg-[#E5E5E5] pt-[105px]">
-        <div className="max-w-lg mx-auto flex flex-col  max-h-[100vh] gap-6 items-center md:items-start justify-end">
+        <div className="max-w-lg mx-auto flex flex-col   max-h-[100vh] gap-6 items-center md:items-start justify-end">
           <Image
             src={says[currentIndex].url}
             alt="profile"
@@ -47,7 +63,7 @@ function WhatSay() {
             height={120}
             className="rounded-lg"
           />
-          <div className="w-full text-center md:text-start md:w-[400px]">
+          <div className="w-full text-center md:text-start md:w-[400px] h-[30vh]">
             <span className="text-[#303030] font-outfit">
               {says[currentIndex].disc}
             </span>
@@ -104,115 +120,35 @@ function WhatSay() {
 
         <div className=" grid grid-cols-2     sm:grid-cols-2  gap-x-4   lg:gap-x-10 gap-y-20 py-10 ">
           {/* start part */}
-          <div className="flex gap-2 max-h-[20vh] items-center max-w-[300px]">
-            <div>
-              <Image
-                src={`/image/profile2.png`}
-                alt="profile 2"
-                width={60}
-                height={100}
-              />
-            </div>
-            <div className="flex flex-col justify-evenly py-2">
-              <span className="text-[16px] font-[400] text-black font-outfit">
-                Ishimwe Jean
-              </span>
-              <span className="text-[16px] font-[200] text-[#626262] font-outfit">
-                CEO TUZA
-              </span>
-            </div>
-          </div>
-          <div className="flex gap-4 max-h-[20vh] items-center max-w-[300px]">
-            <div>
-              <Image
-                src={`/image/profile2.png`}
-                alt="profile 2"
-                width={60}
-                height={60}
-              />
-            </div>
-            <div className="flex flex-col justify-evenly py-1">
-              <span className="text-[16px] font-[400] text-black  font-outfit">
-                Ishimwe Jean
-              </span>
-              <span className="text-[16px] font-[200] text-[#626262] font-outfit">
-                CEO TUZA
-              </span>
-            </div>
-          </div>
-
-          <div className="flex gap-4 max-h-[20vh] items-center max-w-[300px]">
-            <div>
-              <Image
-                src={`/image/profile2.png`}
-                alt="profile 2"
-                width={60}
-                height={60}
-              />
-            </div>
-            <div className="flex flex-col justify-evenly py-1">
-              <span className="text-[16px] font-[400] text-black   font-outfit">
-                Ishimwe Jean
-              </span>
-              <span className="text-[16px] font-[200] text-[#626262] font-outfit">
-                CEO TUZA
-              </span>
-            </div>
-          </div>
-          <div className="flex gap-4 max-h-[20vh]   items-center max-w-[300px]">
-            <div>
-              <Image
-                src={`/image/profile2.png`}
-                alt="profile 2"
-                width={60}
-                height={60}
-              />
-            </div>
-            <div className="flex flex-col justify-evenly py-1">
-              <span className="text-[16px] font-[400] text-black  font-outfit">
-                Ishimwe Jean
-              </span>
-              <span className="text-[16px] font-[200] text-[#626262] font-outfit">
-                CEO TUZA
-              </span>
-            </div>
-          </div>
-          <div className="flex gap-4 max-h-[20vh]  items-center max-w-[300px]">
-            <div>
-              <Image
-                src={`/image/profile2.png`}
-                alt="profile 2"
-                width={60}
-                height={60}
-              />
-            </div>
-            <div className="flex flex-col justify-evenly py-1">
-              <span className="text-[16px] font-[400] text-black  font-outfit">
-                Ishimwe Jean
-              </span>
-              <span className="text-[16px] font-[200] text-[#626262] font-outfit">
-                CEO TUZA
-              </span>
-            </div>
-          </div>
-          <div className="flex gap-4 max-h-[20vh] items-center max-w-[300px]">
-            <div>
-              <Image
-                src={`/image/profile2.png`}
-                alt="profile 2"
-                width={60}
-                height={60}
-              />
-            </div>
-            <div className="flex flex-col justify-evenly py-1">
-              <span className="text-[16px] font-[400] text-black   font-outfit">
-                Ishimwe Jean
-              </span>
-              <span className="text-[16px] font-[200] text-[#626262]">
-                CEO TUZA
-              </span>
-            </div>
-          </div>
+          {says.map((item, index) => {
+            return (
+              <div
+                onClick={() => GoToWhatSay(index)}
+                key={index}
+                className={`${
+                  currentIndex === index ? "border-2 border-yellow-500/30" : ""
+                } rounded-md p-1 flex gap-2 max-h-[20vh] items-center max-w-[300px]`}
+              >
+                <div className="w-16 h-16">
+                  <Image
+                    src={item.url}
+                    alt="profile 2"
+                    width={60}
+                    className="w-full h-full object-cover rounded-lg"
+                    height={100}
+                  />
+                </div>
+                <div className="flex flex-col justify-evenly py-2">
+                  <span className="text-[16px] font-[400] text-black font-outfit">
+                    {item.name}
+                  </span>
+                  <span className="text-[16px] font-[200] text-[#626262] font-outfit">
+                    {item.title}
+                  </span>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         {/* endding part */}
