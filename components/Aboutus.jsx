@@ -36,7 +36,7 @@ const Aboutus = () => {
               </div>
             </div>
             <div className="flex">
-              <div className="border border-orange-300 flex flex-col w-[180px]  sm:w-[300px] py-14 items-start px-6 justify-center h-[100px] ">
+              <div className="flex flex-col w-[180px]  sm:w-[300px] py-14 items-start px-6 justify-center h-[100px] ">
                 <span className="text-white w-40 font-outfit">
                   Projects <br /> Worked So far
                 </span>

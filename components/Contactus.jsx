@@ -1,7 +1,13 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Form from "./Form";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContactUs = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className=" relative " id="contactus">
       <div className="w-full relative flex px-2 sm:px-20 py-0 bg-[#56697A] justify-center">
@@ -46,7 +52,10 @@ const ContactUs = () => {
             Get In Touch With us
           </h1>
           <div className="flex flex-col  lg:flex-row items-start  md:justify-center md:items-center gap-10">
-            <div className="flex flex-col  w-[80%]  h-full  gap-4">
+            <div
+              data-aos="fade-up"
+              className="flex flex-col  w-[80%]  h-full  gap-4"
+            >
               <div className="flex gap-2">
                 <span className="text-[16px] md:text-[18px] text-white">
                   Are you ready to elevate your global business or profession to

@@ -2,30 +2,34 @@
 import { ContactUs, Footer, Navbar2 } from "@/components";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Head from "next/head";
-import { resolve } from "styled-jsx/css";
 
 const metadata = {
   title: "Infinity-Tech About us",
 };
 
 function OurWorks() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const casestudies = [
     {
       id: 1,
-      name: "Tuza podcast",
+      name: "Delivery App",
       client: "Tuza Rwanda",
-      type: "UI/UX,Developement",
-      image: `/image/project1.png`,
-      date: "June 2023",
+      type: "Mobile App Development",
+      image: `/image/deliveryApp.png`,
+      date: "Augst 2023",
     },
     {
       id: 2,
-      name: "Tuza podcast",
-      client: "Tuza Rwanda",
-      type: "UI/UX,Developement",
-      image: `/image/project2.png`,
+      name: "Infinity Tech Driver",
+      client: "Infinity Tech solution",
+      type: "Mobile App Development",
+      image: `/image/driver.png`,
       date: "June 2023",
     },
     {
@@ -33,31 +37,31 @@ function OurWorks() {
       name: "Tuza podcast",
       client: "Tuza Rwanda",
       type: "UI/UX,Developement",
-      image: `/image/project3.png`,
-      date: "June 2023",
+      image: `/image/goweb.png`,
+      date: "October 2023",
     },
     {
-      id: 1,
+      id: 4,
+      name: "Delivery App",
+      client: "Tuza Rwanda",
+      type: "Mobile App Development",
+      image: `/image/deliveryApp.png`,
+      date: "Augst 2023",
+    },
+    {
+      id: 5,
       name: "Tuza podcast",
       client: "Tuza Rwanda",
       type: "UI/UX,Developement",
-      image: `/image/project1.png`,
-      date: "June 2023",
+      image: `/image/goweb.png`,
+      date: "October 2023",
     },
     {
-      id: 2,
-      name: "Tuza podcast",
-      client: "Tuza Rwanda",
-      type: "UI/UX,Developement",
-      image: `/image/project2.png`,
-      date: "June 2023",
-    },
-    {
-      id: 3,
-      name: "Tuza podcast",
-      client: "Tuza Rwanda",
-      type: "UI/UX,Developement",
-      image: `/image/project3.png`,
+      id: 6,
+      name: "Infinity Tech Driver",
+      client: "Infinity Tech solution",
+      type: "Mobile App Development",
+      image: `/image/driver.png`,
       date: "June 2023",
     },
   ];
@@ -80,11 +84,14 @@ function OurWorks() {
 
       {/* end navbar */}
       <div className="flex flex-col gap-6 justify-center w-full items-center pt-5">
-        <h1 className="text-[40px] text-center text-[#5F7487] font-bold leading-10 ">
+        <h1
+          data-aos="fade-down"
+          className="text-[40px] text-center text-[#5F7487] font-bold leading-10 "
+        >
           Weaving <br />
           Dreams into Digital Reality
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-4">
+        <div data-aos="fade-right" className="grid grid-cols-2 md:grid-cols-4">
           {buttonLable.map((item, index) => (
             <button
               key={index}
@@ -101,15 +108,22 @@ function OurWorks() {
         <div className="grid  sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-x-10 mt-5 md:gap-y-10 items-center pb-10">
           {casestudies.map((item) => (
             <div
+              data-aos="fade-down"
               key={item.id}
               className="relative flex max-w-[100vh] flex-col gap-[20px]"
             >
-              <div className="max-h-[100vh]">
+              <div className="h-[50vh]">
                 <div className=" absolute p-2 rounded-md mt-4  right-2 bg-[#FBECD8] text-[#F59620]">
                   <span className="font-outfit">{item.date}</span>
                 </div>
 
-                <Image src={item.image} alt="" width={300} height={0} />
+                <Image
+                  src={item.image}
+                  className="h-full object-cover rounded-md"
+                  alt=""
+                  width={300}
+                  height={0}
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-[#56697A] text-[12px] font-outfit">

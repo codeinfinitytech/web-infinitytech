@@ -1,9 +1,18 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Footer() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <footer class=" py-20 px-10 w-full">
-      <div class="max-w-6xl px-10 space-y-10 sm:space-y-0 sm:px-0 mx-auto md:grid-cols-2 lg:grid-cols-4 sm:gap-20 grid w-full justify-center">
+      <div
+        data-aos="fade-up"
+        class="max-w-6xl px-10 space-y-10 sm:space-y-0 sm:px-0 mx-auto md:grid-cols-2 lg:grid-cols-4 sm:gap-20 grid w-full justify-center"
+      >
         <div class="flex flex-col gap-4">
           {" "}
           <Image src={`/image/logo2.png`} alt="" width={150} height={100} />

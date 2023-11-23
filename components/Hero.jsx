@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import { motion } from "framer-motion";
 
 import Image from "next/image";
 
@@ -18,7 +17,7 @@ function Hero() {
       </div>
       <Navbar />
       <div className="px-2 h-full mx-auto max-w-lg flex gap-[26px] mb-14">
-        <motion.div
+        <div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 2 }}
@@ -45,7 +44,7 @@ function Hero() {
               Our Work
             </button>
           </div>
-        </motion.div>
+        </div>
       </div>
       <div className="pb-20">
         <a href="#service" className="text-center text-white">
