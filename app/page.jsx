@@ -31,7 +31,7 @@ export default function Home() {
   }, [isLoading]);
 
   return (
-    <main className="flex flex-col justify-center">
+    <main className="flex flex-col justify-center overflow-hidden">
       {isLoading && isHome ? (
         <SplashScreen />
       ) : (
