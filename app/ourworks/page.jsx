@@ -10,7 +10,7 @@ const metadata = {
   title: "Infinity-Tech About us",
 };
 
-async function OurWorks() {
+function OurWorks() {
   const casestudies = [
     {
       id: 1,
