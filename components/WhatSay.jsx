@@ -8,31 +8,31 @@ function WhatSay() {
       url: `/image/say1.jpg`,
       disc: "Working with your team was a game-changer for our business! The website, mobile app, and dashboard your company developed are not just visually stunning but also incredibly user-friendly. Our customers love the seamless experience, and we've seen a significant increase in engagement since the launch.",
       name: "Umuhoza Yvethe",
-      title: "Profession",
+      title: "IT Manager - Stellar",
     },
     {
       url: `/image/say2.jpg`,
       disc: "Collaborating with your tech experts was a breeze. Our website, mobile app, and dashboard not only look fantastic but also perform flawlessly. The feedback from our users has been overwhelmingly positive, highlighting the user-centric design and the seamless integration of cutting-edge technologies.",
       name: "Rukundo Christian",
-      title: "CEO TUZA",
+      title: "Infinity Dynamics Labs",
     },
     {
       url: `/image/say3.jpg`,
       disc: "Impressed with the professionalism and technical expertise of your company. From conceptualizing our ideas to delivering a fully functional website, mobile app, and dashboard, the entire process was smooth. Your team's commitment to quality and innovation truly sets you apart in the tech industry",
       name: "Ntwali Emma",
-      title: "CEO TUZA",
+      title: "CEO NebulaTech",
     },
     {
-      url: `/image/project1.png`,
-      disc: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis quisquam eaque a sequi dignissimos ipsa ratione ab sapiente voluptatum sunt minima esse explicabo reprehenderit et maiores placeat, sit eos.",
+      url: `/image/say4.webp`,
+      disc: "consectetur adipisicing elit. Assumenda nobis quisquam eaque a sequi dignissimos ipsa ratione ab sapiente voluptatum sunt minima esse explicabo reprehenderit et maiores placeat, sit eos.",
       name: "Edson",
       title: "CEO TUZA",
     },
     {
-      url: `/image/project2.png`,
+      url: `/image/say5.jpg`,
       disc: "Editor subtract rectangle auto project flatten content opacity hand horizontal. Effect pen draft subtract style background mainarrange ipsum. Pen editor arrange pen invite reesizing verticalduplicate. Pixel italic editor main project effect invite share.Hand strikethrough create vertical rectangle inspect auto",
       name: "Ben",
-      title: "CEO TUZA",
+      title: "Human resource(NeTi)",
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
