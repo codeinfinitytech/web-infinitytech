@@ -37,7 +37,7 @@ function Navbar2() {
           About Us
         </a>
         <a
-          href="#"
+          href="#contactus"
           className=" px-10 py-[10px] border border-[#F59620] text-[#F59620]
          hover:text-white hover:bg-[#F59620]"
         >

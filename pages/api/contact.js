@@ -22,7 +22,7 @@ export default async function (req,res){
             from: user,
             to: "ngaboart123@gmail.com",
             replyTo: email,
-            subject: `contact form submission from ${username}`,
+            subject: `Infinity Tech Client ${username}`,
             html:`
             <p>Name: ${username}</p>
             <p>Email: ${email}</p>
