@@ -24,7 +24,7 @@ function WhatSay() {
     },
     {
       url: `/image/say4.webp`,
-      disc: "consectetur adipisicing elit. Assumenda nobis quisquam eaque a sequi dignissimos ipsa ratione ab sapiente voluptatum sunt minima esse explicabo reprehenderit et maiores placeat, sit eos.",
+      disc: "gconsectetur adipisicing elit. Assumenda nobis quisquam eaque a sequi dignissimos ipsa ratione ab sapiente voluptatum sunt minima esse explicabo reprehenderit et maiores placeat, sit eos.",
       name: "Edson",
       title: "CEO TUZA",
     },

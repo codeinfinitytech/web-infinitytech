@@ -76,6 +76,23 @@ function AboutusPage() {
           <div className="flex flex-col gap-2">
             <div className="w-[200px] h-[250px]">
               <Image
+                src={`/image/gedeo.jpg`}
+                alt=""
+                width={200}
+                height={100}
+                className="rounded-md h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+                Gentil Gedeo
+              </h1>
+              <span className="text-[18px] font-[400] text-gray-700">CEO</span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="w-[200px] h-[250px]">
+              <Image
                 src={`/image/albert.jpg`}
                 alt=""
                 width={200}
@@ -86,6 +103,25 @@ function AboutusPage() {
             <div className="flex flex-col gap-[-12px]">
               <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
                 Albert Sentongo
+              </h1>
+              <span className="text-[18px] font-[400] text-gray-700">
+                Software Engineer
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="w-[200px] h-[250px]">
+              <Image
+                src={`/image/innocent.jpg`}
+                alt=""
+                width={200}
+                height={100}
+                className="rounded-md h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+                Innocent Imanishimwe
               </h1>
               <span className="text-[18px] font-[400] text-gray-700">
                 Software Engineer
@@ -108,6 +144,25 @@ function AboutusPage() {
               </h1>
               <span className="text-[18px] font-[400] text-gray-700">
                 IT Director
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="w-[200px] h-[250px]">
+              <Image
+                src={`/image/aline.jpg`}
+                alt=""
+                width={200}
+                height={100}
+                className="rounded-md h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+                Aline Muhimpundu
+              </h1>
+              <span className="text-[16px] font-[400] text-gray-700">
+                Infinity Tech Driver Support
               </span>
             </div>
           </div>
@@ -165,6 +220,25 @@ function AboutusPage() {
               </h1>
               <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
                 Developer
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="w-[200px] h-[250px]">
+              <Image
+                src={`/image/sharif.jpg`}
+                alt=""
+                width={200}
+                height={100}
+                className="rounded-md h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+                Sharif Mucyo
+              </h1>
+              <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
+                Legal & Compliance
               </span>
             </div>
           </div>
