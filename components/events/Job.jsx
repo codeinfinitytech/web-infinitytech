@@ -3,10 +3,20 @@ import { db } from "@/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { InfinitySpin } from "react-loader-spinner";
+import JobModal from "./JobModal";
 
 const Job = () => {
   const [jobOffers, setJobOffers] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [selectedJob, setSelectedJob] = useState(null);
+
+  const openModal = (job) => {
+    setSelectedJob(job);
+  };
+
+  const closeModal = () => {
+    setSelectedJob(null);
+  };
 
   useEffect(() => {
     const fetchJobOffers = async () => {
@@ -23,6 +33,11 @@ const Job = () => {
   }, []);
   return (
     <div className="md:px-24 px-4 py-10 flex flex-col gap-2  ">
+      <JobModal
+        isOpen={selectedJob !== null}
+        onClose={closeModal}
+        jobDetails={selectedJob}
+      />
       <h1 className="text-center text-[32px] py-4">
         Explore Exciting <span className="text-orange-400">Job</span>{" "}
         Opportunities
@@ -38,7 +53,10 @@ const Job = () => {
           </h1>
           <div className="flex flex-col gap-2 w-full">
             {jobOffers.map((jobOffer) => (
-              <div className="flex fle-col items-center justify-between bg-gray-200/80 p-2 rounded-md px-2 w-full">
+              <div
+                onClick={() => openModal(jobOffer)}
+                className="cursor-pointer hover:bg-gray-300/80 flex fle-col items-center justify-between bg-gray-200/80 p-2 rounded-md px-2 w-full"
+              >
                 <div className="flex flex-col md:flex-row w-full md:w-[40] gap-4 items-center">
                   <div className="py-4 w-[100px] flex items-center justify-center  bg-orange-400/80 rounded-md">
                     <h1 className="text-[30px] text-white">
