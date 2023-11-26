@@ -66,6 +66,8 @@ function Navbar2() {
             <a href="/">Home</a>
             <a href="/ourworks">Our works</a>
             <a href="/services">Services</a>
+            <a href="/offers">Offers</a>
+            <a href="/event">Events</a>
             <a href="/aboutus">About us</a>
             <button className="py-2 px-10 bg-[#F59620] rounded-md mt-4">
               Reach as
