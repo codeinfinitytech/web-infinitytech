@@ -52,7 +52,7 @@ const JobModal = ({ isOpen, onClose, jobDetails }) => {
         <p className="text-center px-5">{jobDetails.jobDescription}</p>
         {/* Add other job details as needed */}
         <button className="rounded-md border p-4 hover:bg-orange-400/80 bg-orange-400 text-white w-[200px]">
-          Aplly now
+          Apply now
         </button>
       </div>
     </div>
