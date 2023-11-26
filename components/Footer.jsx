@@ -34,7 +34,7 @@ function Footer() {
                 <path d="M15.54 11.41a3.147 3.147 0 11-6.294 0 3.147 3.147 0 016.295 0z"></path>
               </g>
             </svg>
-            <p class="text-[#56697A]">Kk 678 st kinombe kicukiro</p>
+            <p class="text-[#56697A]">89 KG 14 Ave, Kigali</p>
           </div>
           <div class="flex gap-4 items-center">
             <svg
@@ -51,7 +51,7 @@ function Footer() {
                 fill="#56697A"
               ></path>
             </svg>
-            <p class="text-[#56697A]">Open 9 AM To 17 PM</p>
+            <p class="text-[#56697A]">open 24 Hours</p>
           </div>
         </div>
         <div class="flex flex-col gap-4">
