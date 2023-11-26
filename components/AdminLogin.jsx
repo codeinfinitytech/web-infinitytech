@@ -30,7 +30,7 @@ const AdminLogin = ({ isLogin }) => {
   return (
     <div className="w-full flex flex-col gap-2 justify-center h-[100vh] items-center">
       <form onSubmit={handleLogin} className="flex flex-col gap-4">
-        <h1 className="text-center text-[24px]">Admin Login</h1>
+        <h1 className="text-center text-[24px]">Infinity Tech Admin Login</h1>
         <div className="flex flex-col gap-1">
           <label>Email:</label>
           <input
@@ -55,7 +55,10 @@ const AdminLogin = ({ isLogin }) => {
           />
         </div>
 
-        <button type="submit" className="bg-gray-800 text-white p-3 rounded-md">
+        <button
+          type="submit"
+          className="bg-orange-400 text-white p-3 rounded-md"
+        >
           Login
         </button>
       </form>
