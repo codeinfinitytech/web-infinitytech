@@ -62,7 +62,7 @@ const AdminLogin = ({ isLogin }) => {
           Login
         </button>
       </form>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p style={{ color: "red" }}>Incorrect password or Email</p>}
     </div>
   );
 };
