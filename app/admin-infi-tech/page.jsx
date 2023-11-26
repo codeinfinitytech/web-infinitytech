@@ -71,14 +71,31 @@ const Admin = () => {
     setShowJobOffersModal(false);
   };
 
+  const logout = () => {
+    // Remove the logged-in status from local storage
+    localStorage.removeItem("isLoggedIn");
+
+    // Update the state to reflect the logged-out status
+    setIsLogin(false);
+
+    // Reload the page
+    window.location.reload();
+  };
+
   return (
     <div className="w-full">
       {isLogin ? (
         <div className="w-full h-[100vh] px-8 md:px-40 pflex flex-col">
-          <div className="w-full border-b border-gray-400 py-4">
+          <div className="relative w-full border-b border-gray-400 py-4">
             <h1 className="text-[16px] text-center md:text-start md:text-[24px]">
               Infinity Tech solution Admin Panel
             </h1>
+            <button
+              onClick={logout}
+              className="text-red-500 hover:opacity-60 cursor-pointer absolute right-0 top-7"
+            >
+              Logout
+            </button>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 py-2">
             <div className="border border-gray-400 p-2 w-[150px] flex flex-col gap-2 rounded-md">
