@@ -1,0 +1,12 @@
+.disc{
+    overflow-y: scroll;
+    height: 50vh;
+}
+.disc::-webkit-scrollbar{
+    background-color: rgb(208, 208, 208);
+    width: 5px;
+}
+.disc::-webkit-scrollbar-thumb{
+    background-color: orange;
+    width: 5px;
+}

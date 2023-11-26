@@ -57,7 +57,7 @@ const JobOffers = () => {
         <div className="flex flex-col">
           <label>Job Salary (per month):</label>
           <input
-            type="number"
+            type="text"
             value={jobSalary}
             onChange={(e) => setJobSalary(e.target.value)}
             required
