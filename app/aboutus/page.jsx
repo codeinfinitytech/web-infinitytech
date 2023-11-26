@@ -18,15 +18,15 @@ function AboutusPage() {
           <div className="relative  w-full gap-8  flex flex-col ">
             <div className="flex  max-w-7xl  justify-center flex-col gap-2 md:flex-row">
               <div className="relative  flex  gap-2   max-h-[330px] md:max-h-[100vh] overflow-hidden   px-4 sm:px-20 md:px-20 flex-col w-full md:w-1/2  ">
-                <div className="flex  justify-center items-center md:items-start md:justify-start">
+                <div className="flex  pb-2 justify-center items-center md:items-start md:justify-start">
                   <button className="px-[30px]  py-2 rounded-md font-[900] bg-[#F5962052]">
                     Aboutus
                   </button>
                 </div>
-                <h1 className="text-2xl md:text-3xl text-center md:text-start text-[#5F7487] font-bold leading-6 md:leading-7">
+                <h1 className="text-2xl md:text-3xl text-center md:text-start text-[#5F7487] font-bold leading-6 md:leading-[40px]">
                   "Creating Tomorrow's <br /> Technology with a Smile!"
                 </h1>
-                <p className="text-[14px] flex flex-col gap-1 text-center md:text-start font-light text-[#515151]  leading-5">
+                <p className="text-[16px] flex flex-col gap-4 text-center md:text-start font-light text-[#515151]  leading-5">
                   <span>
                     Infinity Tech Solutions: A Global Team of Committed
                     Professionals. Our unwavering mission is to empower
@@ -84,7 +84,7 @@ function AboutusPage() {
               />
             </div>
             <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
                 Gentil Gedeo
               </h1>
               <span className="text-[18px] font-[400] text-gray-700">CEO</span>
@@ -101,7 +101,7 @@ function AboutusPage() {
               />
             </div>
             <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
                 Albert Sentongo
               </h1>
               <span className="text-[18px] font-[400] text-gray-700">
@@ -120,7 +120,7 @@ function AboutusPage() {
               />
             </div>
             <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
                 Innocent Imanishimwe
               </h1>
               <span className="text-[18px] font-[400] text-gray-700">
@@ -139,7 +139,7 @@ function AboutusPage() {
               />
             </div>
             <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
                 Muhindo Mussa
               </h1>
               <span className="text-[18px] font-[400] text-gray-700">
@@ -158,11 +158,30 @@ function AboutusPage() {
               />
             </div>
             <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
                 Aline Muhimpundu
               </h1>
               <span className="text-[16px] font-[400] text-gray-700">
                 Infinity Tech Driver Support
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="w-[200px] h-[250px]">
+              <Image
+                src={`/image/joseline.jpg`}
+                alt=""
+                width={200}
+                height={100}
+                className="rounded-md h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
+                MUHAWENIMANA Joseline
+              </h1>
+              <span className="text-[16px] font-[400] text-gray-700">
+                Support
               </span>
             </div>
           </div>
@@ -177,7 +196,7 @@ function AboutusPage() {
               />
             </div>
             <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
                 Samuel Ishimwe
               </h1>
               <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
@@ -196,7 +215,7 @@ function AboutusPage() {
               />
             </div>
             <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
                 Edson Ntwali
               </h1>
               <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
@@ -215,7 +234,7 @@ function AboutusPage() {
               />
             </div>
             <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
+              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
                 Faustin Iyaremye
               </h1>
               <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
