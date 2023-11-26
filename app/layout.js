@@ -7,7 +7,7 @@ import { Toaster } from "react-hot-toast"
 const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Infinity Tech',
+  title: 'Infinity Tech solution',
   description: 'Infinity Tech',
 }
 
