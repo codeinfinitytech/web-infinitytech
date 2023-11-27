@@ -14,6 +14,93 @@ function Networking() {
     "UI/UX design",
     "web and apps",
   ];
+  const renderContent = () => {
+    switch (activeButton) {
+      case 0:
+        return (
+          <div className="w-full flex flex-col md:flex-row gap-2 p-2 pt-6 sml:p-10 mdl:p-1 mt-10 justify-center items-center">
+            <Image
+              src={`/image/service1.png`}
+              alt="service image 1"
+              width={400}
+              height={300} // Set the appropriate height
+              className="w-full md:w-1/2 mdl:w-[400px]"
+            />
+            <Image
+              src={`/image/service2.png`}
+              alt="service image 2"
+              width={400}
+              height={300} // Set the appropriate height
+              className="w-full md:w-1/2 mdl:w-[400px]"
+            />
+            {/* Add other content for button 0 if needed */}
+          </div>
+        );
+      case 1:
+        return (
+          <div className="w-full flex flex-col md:flex-row gap-2 p-2 pt-6 sml:p-10 mdl:p-1 mt-10 justify-center items-center">
+            <Image
+              src={`/image/project1.png`}
+              alt="service image 2"
+              width={400}
+              height={300} // Set the appropriate height
+              className="w-full md:w-1/2 mdl:w-[400px]"
+            />
+            <Image
+              src={`/image/project2.png`}
+              alt="service image 2"
+              width={400}
+              height={300} // Set the appropriate height
+              className="w-full md:w-1/2 mdl:w-[400px]"
+            />
+            {/* Add other content for button 1 if needed */}
+          </div>
+        );
+      case 2:
+        // Handle other buttons similarly
+        return (
+          <div className="w-full flex flex-col md:flex-row gap-2 p-2 pt-6 sml:p-10 mdl:p-1 mt-10 justify-center items-center">
+            <Image
+              src={`/image/service1.png`}
+              alt="service image 1"
+              width={400}
+              height={300} // Set the appropriate height
+              className="w-full md:w-1/2 mdl:w-[400px]"
+            />
+            <Image
+              src={`/image/service2.png`}
+              alt="service image 2"
+              width={400}
+              height={300} // Set the appropriate height
+              className="w-full md:w-1/2 mdl:w-[400px]"
+            />
+          </div>
+        );
+      case 3:
+        // Handle other buttons similarly
+        return (
+          <div className="w-full flex flex-col md:flex-row gap-2 p-2 pt-6 sml:p-10 mdl:p-1 mt-10 justify-center items-center">
+            <Image
+              src={`/image/project1.png`}
+              alt="service image 2"
+              width={400}
+              height={300} // Set the appropriate height
+              className="w-full md:w-1/2 mdl:w-[400px]"
+            />
+            <Image
+              src={`/image/project2.png`}
+              alt="service image 2"
+              width={400}
+              height={300} // Set the appropriate height
+              className="w-full md:w-1/2 mdl:w-[400px]"
+            />
+          </div>
+        );
+      // Add more cases if you have additional buttons
+      default:
+        return null;
+    }
+  };
   return (
     <div className="flex w-full flex-col items-center justify-center gap-10">
       <div className="flex flex-col mdl:flex-row w-full max-w-7xl">
@@ -69,22 +156,7 @@ function Networking() {
               </button>
             ))}
           </div>
-          <div className="w-full flex flex-col md:flex-row gap-2 p-2 pt-6 sml:p-10 mdl:p-2 justify-center items-center  ">
-            <Image
-              src={`/image/service1.png`}
-              alt="service image"
-              width={400}
-              height={0}
-              className="w-full md:w-1/2 mdl:w-[400px]"
-            />
-            <Image
-              src={`/image/service1.png`}
-              alt="service image"
-              width={400}
-              height={0}
-              className="w-full md:w-1/2 mdl:w-[400px]"
-            />
-          </div>
+          {renderContent()}
         </div>
       </div>
     </div>
