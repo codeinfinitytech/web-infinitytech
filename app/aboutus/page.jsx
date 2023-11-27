@@ -114,7 +114,7 @@ function AboutusPage() {
           <div className="flex flex-col gap-2">
             <div className="w-[200px] h-[250px]">
               <Image
-                src={`/image/Munyaneza.jpg`}
+                src={`/image/munyaneza.jpg`}
                 alt=""
                 width={200}
                 height={100}
