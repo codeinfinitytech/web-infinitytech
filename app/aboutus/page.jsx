@@ -87,7 +87,9 @@ function AboutusPage() {
               <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
                 Gentil Gedeo
               </h1>
-              <span className="text-[18px] font-[400] text-gray-700">CEO</span>
+              <span className="text-[18px] font-[400] text-gray-700">
+                CEO Tech infinty solution
+              </span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -107,6 +109,31 @@ function AboutusPage() {
               <span className="text-[18px] font-[400] text-gray-700">
                 Software Engineer
               </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="w-[200px] h-[250px]">
+              <Image
+                src={`/image/Munyaneza.jpg`}
+                alt=""
+                width={200}
+                height={100}
+                className="rounded-md h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-[-12px]">
+              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
+                Dr. Faustin Munyaneza
+              </h1>
+              <span className="text-[18px] font-[400] text-gray-700">
+                Managing Director,Consultant
+              </span>
+              <a
+                href="mailto:munyanezafaustin@yahoo.com"
+                className="text-blue-400 text-[14px]"
+              >
+                munyanezafaustin@yahoo.com
+              </a>
             </div>
           </div>
           <div className="flex flex-col gap-2">
