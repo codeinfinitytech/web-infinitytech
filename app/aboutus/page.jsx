@@ -125,7 +125,7 @@ function AboutusPage() {
               <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
                 Dr. Faustin Munyaneza
               </h1>
-              <span className="text-[18px] font-[400] text-gray-700">
+              <span className="text-[14px] leading-4 font-[400] text-gray-700">
                 Manager, Corporate Training & HR Advisory, Consultant
               </span>
               <a
