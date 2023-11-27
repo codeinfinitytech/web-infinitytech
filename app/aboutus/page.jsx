@@ -118,7 +118,7 @@ function AboutusPage() {
                 alt=""
                 width={200}
                 height={100}
-                className="rounded-md h-full object-cover"
+                className="rounded-md h-full  object-cover"
               />
             </div>
             <div className="flex flex-col gap-[-12px]">
@@ -126,7 +126,7 @@ function AboutusPage() {
                 Dr. Faustin Munyaneza
               </h1>
               <span className="text-[18px] font-[400] text-gray-700">
-                Manager, Corporate Training & HR Advisory
+                Manager, Corporate Training & HR Advisory, Consultant
               </span>
               <a
                 href="mailto:munyanezafaustin@yahoo.com"
