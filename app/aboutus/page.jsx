@@ -126,7 +126,7 @@ function AboutusPage() {
                 Dr. Faustin Munyaneza
               </h1>
               <span className="text-[18px] font-[400] text-gray-700">
-                Managing Director,Consultant
+                Manager, Corporate Training & HR Advisory
               </span>
               <a
                 href="mailto:munyanezafaustin@yahoo.com"
