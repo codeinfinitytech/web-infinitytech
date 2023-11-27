@@ -278,6 +278,12 @@ function AboutusPage() {
               <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
                 Developer
               </span>
+              <a
+                href="mailto:irankundaeddy14@gmail.com"
+                className="text-blue-400 text-[14px]"
+              >
+                irankundaeddy14@gmail.com
+              </a>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -297,6 +303,12 @@ function AboutusPage() {
               <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
                 Developer
               </span>
+              <a
+                href="mailto:ntwalimudasubirag@gmail.com"
+                className="text-blue-400 text-[14px]"
+              >
+                ntwalimudasubirag@gmail.com
+              </a>
             </div>
           </div>
         </div>
