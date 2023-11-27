@@ -40,21 +40,23 @@ const JobModal = ({ isOpen, onClose, jobDetails }) => {
         <div className="disc py-14">
           <div className=" items-center flex flex-col">
             <h2 className="flex  flex-row items-center gap-1 mt-4">
-              <span>Job Titel:</span>
+              <span className="text-black">Job Titel:</span>
               {jobDetails.jobName}
             </h2>
-            <p>
+            <p className="text-black">
               Salary:{" "}
-              <span className="text-orange-400">{jobDetails.jobSalary}</span>{" "}
+              <span className="text-orange-400 ">{jobDetails.jobSalary}</span>{" "}
               Frw
             </p>
-            <p>
+            <p className="text-blac">
               Time:{" "}
               <span className="text-orange-400">{jobDetails.jobTime}</span>
             </p>
           </div>
 
-          <p className="text-start px-5">{jobDetails.jobDescription}</p>
+          <p className="text-start text-black px-5">
+            {jobDetails.jobDescription}
+          </p>
           {/* Add other job details as needed */}
         </div>
         <button className="rounded-md border p-4 hover:bg-orange-400/80 bg-orange-400 text-white w-[200px]">
