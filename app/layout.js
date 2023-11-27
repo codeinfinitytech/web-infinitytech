@@ -16,8 +16,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={outfit.className}>
+        <main className='bg-white'>
         <Toaster position='top-right'/>
         {children}
+        </main>
         </body>
     </html>
   )

@@ -23,7 +23,7 @@ const Event = () => {
   }, []);
   return (
     <div className="px-4 md:px-24 py-10 flex flex-col gap-2  ">
-      <h1 className="text-center text-[32px] py-4">
+      <h1 className="text-center text-[32px] text-black py-4">
         Upcoming <span className="text-orange-400"> Coding </span> Adventures
       </h1>
       {loading ? (

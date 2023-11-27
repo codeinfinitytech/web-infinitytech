@@ -38,7 +38,7 @@ const Job = () => {
         onClose={closeModal}
         jobDetails={selectedJob}
       />
-      <h1 className="text-center text-[32px] py-4">
+      <h1 className="text-center text-blac text-[32px] py-4">
         Explore Exciting <span className="text-orange-400">Job</span>{" "}
         Opportunities
       </h1>
