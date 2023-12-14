@@ -23,6 +23,7 @@ function OurWorks() {
       type: "Mobile App Development",
       image: `/image/deliveryApp.png`,
       date: "Augst 2023",
+      status: "web"
     },
     {
       id: 2,
@@ -31,6 +32,16 @@ function OurWorks() {
       type: "Mobile App Development",
       image: `/image/driver.png`,
       date: "June 2023",
+      status: "web"
+    },
+    {
+      id: 2,
+      name: "Infinity Tech Driver",
+      client: "Infinity Tech solution",
+      type: "Mobile App Development",
+      image: `/image/driver.png`,
+      date: "June 2023",
+      status: "gate"
     },
     {
       id: 3,
@@ -39,42 +50,53 @@ function OurWorks() {
       type: "UI/UX,Developement",
       image: `/image/goweb.png`,
       date: "October 2023",
+      status: "ui"
     },
     {
       id: 4,
       name: "Delivery App",
       client: "Tuza Rwanda",
       type: "Mobile App Development",
-      image: `/image/deliveryApp.png`,
+      image: `/image/project6.webp`,
       date: "Augst 2023",
+      status: "web"
     },
     {
       id: 5,
       name: "Tuza podcast",
       client: "Tuza Rwanda",
       type: "UI/UX,Developement",
-      image: `/image/goweb.png`,
+      image: `/image/project4.jpg`,
       date: "October 2023",
+      status: "gate"
     },
     {
       id: 6,
       name: "Infinity Tech Driver",
       client: "Infinity Tech solution",
       type: "Mobile App Development",
-      image: `/image/driver.png`,
+      image: `/image/project5.png`,
       date: "June 2023",
+      status: "ui"
     },
   ];
+  const [status, setStatus] = useState("web");
   const [activeButton, setActiveButton] = useState(0);
 
-  const handleButtonClick = (buttonId) => {
-    setActiveButton(buttonId);
+  const handleButtonClick = (item) => {
+    setActiveButton(item.id);
+    setStatus(item.status)
   };
+ 
+
+  // Filter case studies based on the selected status
+  const filteredCaseStudies = casestudies.filter((item) => item.status === status);
+
   const buttonLable = [
-    "web and apps",
-    "payement gateways",
-    "UI/UX design",
-    "web and apps",
+    {name:"web and apps",id:1,status:"web"},
+    {name:"payement gateways",id:2,status:"gate"},
+    {name:"UI/UX design",id:3,status:'ui'},
+    {name:"web and apps",id:4,status:'web'},
   ];
 
   return (
@@ -95,18 +117,18 @@ function OurWorks() {
           {buttonLable.map((item, index) => (
             <button
               key={index}
-              onClick={() => handleButtonClick(index)}
+              onClick={() => handleButtonClick(item)}
               className={`flex ${
-                activeButton === index ? "bg-[#F59620] text-white" : ""
+                activeButton === item.id ? "bg-[#F59620] text-white" : ""
               }  px-[20px] md:px-[40px] h-[60px] line-clamp-1 items-center justify-center text-black rounded-md`}
             >
-              {item}
+              {item.name}
             </button>
           ))}
         </div>
         {/* orur project */}
         <div className="grid  sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-x-10 mt-5 md:gap-y-10 items-center pb-10">
-          {casestudies.map((item) => (
+          {filteredCaseStudies.map((item) => (
             <div
               data-aos="fade-down"
               key={item.id}
