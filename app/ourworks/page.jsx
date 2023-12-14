@@ -32,7 +32,7 @@ function OurWorks() {
       type: "Mobile App Development",
       image: `/image/driver.png`,
       date: "June 2023",
-      status: "web"
+      status: "web  "
     },
     {
       id: 2,
@@ -54,11 +54,11 @@ function OurWorks() {
     },
     {
       id: 4,
-      name: "Delivery App",
+      name: "Web Design",
       client: "Tuza Rwanda",
-      type: "Mobile App Development",
+      type: "Web Development",
       image: `/image/project6.webp`,
-      date: "Augst 2023",
+      date: "November 2023",
       status: "web"
     },
     {
