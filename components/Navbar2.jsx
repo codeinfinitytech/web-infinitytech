@@ -3,6 +3,10 @@ import { requestToBodyStream } from "next/dist/server/body-streams";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { VscThreeBars } from "react-icons/vsc";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
+import { navBarLinks } from "@/constants/navLinks";
+import Link from "next/link";
 
 function Navbar2() {
   const [isOpen, setIsOPen] = useState(false);
@@ -11,12 +15,14 @@ function Navbar2() {
     document.addEventListener("click", handler, true);
   }, []);
   const handler = (e) => {
-    if (!menuRef.current.contains(e.target)) {
+    if (!menuRef.current?.contains(e.target)) {
       setIsOPen(false);
     } else {
       console.log("clicled inside");
     }
   };
+
+  const pathname = usePathname();
 
   return (
     <div className=" max-w-7xl h-fit mx-auto mt-5 items-center px-6 sm:px-10 md:px-20 w-full flex justify-between">
@@ -24,24 +30,22 @@ function Navbar2() {
         <Image src={`/image/logo2.png`} alt="" width={200} height={100} />
       </a>
       <div className="links hidden md:flex text-[#56697A]  text-[16px] gap-10 font-light items-center font-outfit">
-        <a href="/" className="hover:text-[#F59620]">
-          Home
-        </a>
-        <a href="/ourworks" className="hover:text-[#F59620]">
-          Our works
-        </a>
-        <a href="/services" className="hover:text-[#F59620]">
-          Services
-        </a>
-        <a href="/offers" className="hover:text-[#F59620]">
-          Offers
-        </a>
-        <a href="/event" className="hover:text-[#F59620]">
-          Events
-        </a>
-        <a href="/aboutus" className="hover:text-[#F59620]">
-          About Us
-        </a>
+        {navBarLinks.map((item) => {
+          const linkActive =
+            pathname === item.route || pathname.startsWith(item.route);
+          return (
+            <Link
+              href={item.route}
+              key={item.label}
+              className={clsx(`group hover:text-[#F59620] `, {
+                "text-[#F59620]": linkActive,
+              })}
+            >
+              {item.label}
+              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#F59620]"></span>
+            </Link>
+          );
+        })}
         <a
           href="#contactus"
           className=" px-10 py-[10px] border border-[#F59620] text-[#F59620]
@@ -63,12 +67,21 @@ function Navbar2() {
           }
         >
           <div className="flex text-white flex-col gap-4  text-[18px]">
-            <a href="/">Home</a>
-            <a href="/ourworks">Our works</a>
-            <a href="/services">Services</a>
-            <a href="/offers">Offers</a>
-            <a href="/event">Events</a>
-            <a href="/aboutus">About us</a>
+            {navBarLinks.map((item) => {
+              const linkActive =
+                pathname === item.route || pathname.startsWith(item.route);
+              return (
+                <Link
+                  href={item.route}
+                  key={item.label}
+                  className={clsx(`hover:text-[#F59620] `, {
+                    "text-[#F59620]": linkActive,
+                  })}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
             <button className="py-2 px-10 bg-[#F59620] rounded-md mt-4">
               Reach as
             </button>
