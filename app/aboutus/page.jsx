@@ -87,8 +87,8 @@ function AboutusPage() {
               <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
                 Gentil Gedeo
               </h1>
-              <span className="text-[18px] font-[400] text-gray-700">
-                CEO Tech infinty solution
+              <span className="text-[16px] max-w-[200px] leading-5 font-[400] text-gray-700">
+              Marketing and Development Director
               </span>
             </div>
           </div>
