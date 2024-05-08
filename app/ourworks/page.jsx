@@ -18,10 +18,10 @@ function OurWorks() {
   const casestudies = [
     {
       id: 1,
-      name: "Delivery App",
-      client: "Tuza Rwanda",
+      name: "Legal connect",
+      client: "Legal",
       type: "Mobile App Development",
-      image: `/image/deliveryApp.png`,
+      image: `/image/legalconnect.png`,
       date: "Augst 2023",
       status: "web"
     },
@@ -54,10 +54,10 @@ function OurWorks() {
     },
     {
       id: 4,
-      name: "Web Design",
-      client: "Tuza Rwanda",
+      name: "Company management",
+      client: "Infinity",
       type: "Web Development",
-      image: `/image/project6.webp`,
+      image: `/image/clock2.png`,
       date: "November 2023",
       status: "web"
     },
@@ -79,9 +79,27 @@ function OurWorks() {
       date: "June 2023",
       status: "ui"
     },
+    {
+      id: 7,
+      name: "Saga Bay",
+      client: "Saga",
+      type: "Web Development",
+      image: `/image/Hello.png`,
+      date: "November 2023",
+      status: "web"
+    },
+    {
+      id: 8,
+      name: "Infinitydriver",
+      client: "Infinity",
+      type: "Web Development",
+      image: `/image/drivera.png`,
+      date: "November 2023",
+      status: "web"
+    },
   ];
   const [status, setStatus] = useState("web");
-  const [activeButton, setActiveButton] = useState(0);
+  const [activeButton, setActiveButton] = useState(1);
 
   const handleButtonClick = (item) => {
     setActiveButton(item.id);

@@ -1,18 +1,19 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { FaArrowCircleDown } from "react-icons/fa";
 
 import Image from "next/image";
 
 function Hero() {
   return (
     <div className="w-full flex flex-col items-center h-[100vh]  justify-center">
-      <div className="bg-[#3e4b56] absolute opacity-90 top-0 -z-10 w-full h-full "></div>
-      <div className="absolute h-full w-full flex items-center justify-center -z-20 overflow-hidden">
+      <div className=" bg-gradient-to-tr to-[#000000] from-[#282525] absolute opacity-90 top-0 -z-10 w-full h-full "></div>
+      <div className="absolute opacity-70  h-full w-full flex items-center justify-center -z-20 overflow-hidden">
         <Image
-          src={`/image/herroBack.png`}
+          src={`/image/banner2.jpg`}
           alt="logo"
           layout="fill"
-          objectFit="contain"
+          objectFit="cover"
         />
       </div>
       <Navbar />
@@ -49,7 +50,7 @@ function Hero() {
       </div>
       <div className="pb-20">
         <a href="#service" className="text-center text-white">
-          Scroll down
+        <FaArrowCircleDown size={30}/>
         </a>
       </div>
     </div>
