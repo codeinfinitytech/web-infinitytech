@@ -15,7 +15,7 @@ const CaseStudies = () => {
       name: "Company Management",
       client: "Tuza Rwanda",
       type: "Web Application",
-      image: `/image/clock2.png`,
+      image: `/image/employee2.png`,
       date: "Augst 2023",
     },
     {
@@ -23,7 +23,7 @@ const CaseStudies = () => {
       name: "SAGA BAY",
       client: "SAB GAY Restraunt",
       type: "Wep Application",
-      image: `/image/sagbay.png`,
+      image: `/image/WAITERPORTAL.png`,
       date: "March 2024",
     },
     {

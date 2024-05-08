@@ -57,7 +57,7 @@ function OurWorks() {
       name: "Company management",
       client: "Infinity",
       type: "Web Development",
-      image: `/image/clock2.png`,
+      image: `/image/employee2.png`,
       date: "November 2023",
       status: "web"
     },

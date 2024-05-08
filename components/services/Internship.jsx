@@ -10,7 +10,7 @@ const Internship = () => {
     <div className="px-[10px] md:px-[50px] py-24 flex flex-col gap-[30px]">
       <div className="flex flex-col gap-[10px] items-center">
         <h1 className="text-center text-[42px] max-w-[600px] leading-[44px] font-[600]">
-          <span className="text-blue-600 ">Software Development</span>{" "}
+          <span className="text-[#F59620] ">Software Development</span>{" "}
           Internship Opportunity Awaits!
         </h1>
         <span className="text-center text-gray-500 font-[300] max-w-[800px]">
