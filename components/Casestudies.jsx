@@ -16,12 +16,12 @@ const CaseStudies = () => {
       client: "Tuza Rwanda",
       type: "Web Application",
       image: `/image/employee2.png`,
-      date: "Augst 2023",
+      date: "August 2023",
     },
     {
       id: 2,
       name: "SAGA BAY",
-      client: "SAB GAY Restraunt",
+      client: "SAGA BAY Restraunt",
       type: "Wep Application",
       image: `/image/WAITERPORTAL.png`,
       date: "March 2024",
@@ -30,7 +30,7 @@ const CaseStudies = () => {
       id: 3,
       name: "Tuza podcast",
       client: "Tuza Rwanda",
-      type: "UI/UX,Developement",
+      type: "UI/UX Development",
       image: `/image/legalconnect.png`,
       date: "October 2023",
     },
@@ -51,7 +51,7 @@ const CaseStudies = () => {
           className="text-[24px] sm:text-[36px] w-[300px] sm:w-[620px] text-center font-bold font-outfit"
           style={{ lineHeight: 1 }}
         >
-          We develop <span className="text-[#F59620]">products</span> that
+          We develop <span className="text-[#F59620] capitalize">products</span> that
           address issues faced by customers.
         </h1>
 

@@ -1,4 +1,5 @@
 "use client";
+import { buttonLable } from "@/constants/libs";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -8,12 +9,7 @@ function Networking() {
   const handleButtonClick = (buttonId) => {
     setActiveButton(buttonId);
   };
-  const buttonLable = [
-    "web and apps",
-    "payement gateways",
-    "UI/UX design",
-    "web and apps",
-  ];
+
   const renderContent = () => {
     switch (activeButton) {
       case 0:
@@ -116,7 +112,7 @@ function Networking() {
               <path
                 d="M-210 213.328C-210 331.146 -116.161 426.656 -0.403824 426.656C115.353 426.656 209.192 331.146 209.192 213.328C209.192 95.5102 115.353 0 -0.403824 0C-116.161 0 -210 95.5102 -210 213.328ZM114.232 213.328C114.232 277.767 62.9077 330.005 -0.403824 330.005C-63.7154 330.005 -115.039 277.767 -115.039 213.328C-115.039 148.889 -63.7154 96.6512 -0.403824 96.6512C62.9077 96.6512 114.232 148.889 114.232 213.328Z"
                 fill="#56697A"
-                fill-opacity="0.2"
+                fillOpacity="0.2"
               />
               <ellipse
                 cx="72.8384"
@@ -125,7 +121,7 @@ function Networking() {
                 ry="74.1352"
                 transform="matrix(-1 0 0 1 72.4346 139.193)"
                 fill="#F59620"
-                fill-opacity="0.32"
+                fillOpacity="0.32"
               />
             </svg>
           </div>
