@@ -30,7 +30,7 @@ const WebMobile = () => {
             Our mobile application development services provide the proper
             solutions and resources to assist organizations in creating
             high-quality, user-friendly, and engaging mobile apps. Our skilled
-            app developers and UI/UX designers can assist
+            app developers and UI/UX designers can assist.
           </p>
 
           <button className="flex items-center justify-between rounded-lg   text-white py-3.5 px-5 w-fit gap-2 mt-6 group transition-all bg-[#F59620] duration-300">
@@ -66,7 +66,7 @@ const WebMobile = () => {
                 fill="#F59620"
               />
             </svg>{" "}
-            UI & UX Desin
+            UI & UX Design
           </button>
           <button className=" flex rounded-tr-xl items-center gap-3 px-5 py-4 absolute sm:-left-14 bottom-0 z-50    bg-[#FFECD5] text-[#F59620]">
             <svg
@@ -83,7 +83,7 @@ const WebMobile = () => {
                 fill="#F59620"
               />
             </svg>{" "}
-            UI & UX Desin
+            UI & UX Design
           </button>
 
           <Image

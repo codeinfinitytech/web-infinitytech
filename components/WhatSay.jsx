@@ -53,7 +53,7 @@ function WhatSay() {
   };
 
   return (
-    <div className=" flex max-h-[250vh]  w-full flex-col md:flex-row ">
+    <div className="max-container padding-container flex max-h-[250vh]  w-full flex-col md:flex-row ">
       <div className="w-full px-4 md:max-w-1/2 flex bg-[#E5E5E5] pt-[105px]">
         <div className="max-w-lg mx-auto flex flex-col   max-h-[100vh] gap-6 items-center md:items-start justify-end">
           <Image

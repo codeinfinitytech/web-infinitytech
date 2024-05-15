@@ -46,7 +46,6 @@ export default function Home() {
           <WhatSay />
           <ContactUs />
           <Footer />
-          <Last />
         </>
       )}
     </main>
