@@ -3,6 +3,7 @@ import {
   ContactUs,
   DataProtection,
   Footer,
+  Navbar,
   Navbar2,
   Networking,
   Services,
@@ -186,12 +187,12 @@ const page = () => {
           />
         </svg>
       ),
-      disc: "Subtract scrolling polygon reesizing clip undo undo pixel sta",
+      disc: "By applying visual hierarchy and page layout techniques, designers use pictures and visual content to communicate and optimize the user experience.",
     },
   ];
   return (
     <main className="flex flex-col justify-center">
-      <Navbar2 />
+      <Navbar />
       <div className="flex flex-col gap-16 justify-center w-full items-center py-10 ">
         <h1 className="text-[40px] text-center text-[#5F7487] font-bold leading-10 mt-10">
           "Creating Tomorrow's <br /> Technology with a Smile!"

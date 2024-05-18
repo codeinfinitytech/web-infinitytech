@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Aboutus, ContactUs, Footer, Navbar2 } from "@/components";
+import { Aboutus, ContactUs, Footer, Navbar, Navbar2 } from "@/components";
 import Image from "next/image";
+import { TEAMWORKERS } from "@/constants/libs";
 
 export const metadata = {
   title: "Infinity-Tech About us",
@@ -11,7 +12,7 @@ function AboutusPage() {
   return (
     <div className="">
       {/* navbar */}
-      <Navbar2 />
+      <Navbar />
       {/* end navbar */}
       <div className="flex flex-col gap-6 justify-center w-full items-center ">
         <div className="mt-[50px]">
@@ -19,8 +20,8 @@ function AboutusPage() {
             <div className="flex  max-w-7xl  justify-center flex-col gap-2 md:flex-row">
               <div className="relative  flex  gap-2   max-h-[330px] md:max-h-[100vh] overflow-hidden   px-4 sm:px-20 md:px-20 flex-col w-full md:w-1/2  ">
                 <div className="flex  pb-2 justify-center items-center md:items-start md:justify-start">
-                  <button className="px-[30px]  py-2 rounded-md font-[900] bg-[#F5962052]">
-                    Aboutus
+                  <button className="px-[30px]  py-2 rounded-md font-[900] bg-[#F59620]">
+                    About us
                   </button>
                 </div>
                 <h1 className="text-2xl md:text-3xl text-center md:text-start text-[#5F7487] font-bold leading-6 md:leading-[40px]">
@@ -68,301 +69,33 @@ function AboutusPage() {
         <Aboutus />
       </div>
       {/* our team member */}
-      <div className="flex flex-col gap-6 py-[56px] px-10 justify-center items-center">
+      <div className="max-container padding-container flexCenter flex flex-col gap-6 py-[56px] px-10 justify-center items-center">
         <h1 className="text-[30px] md:text-[40px] text-[#5F7487] font-bold">
           Meet Our Team
         </h1>
-        <div className=" grid gap-x-10 gap-y-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md">
-          <div className="flex flex-col gap-2">
+        <div className="grid gap-x-10 gap-y-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md">
+          {/* dasdas */}
+            { TEAMWORKERS.map((man, name) => (
+          <div className="flex flex-col gap-2" key={name}>
             <div className="w-[200px] h-[250px]">
               <Image
-                src={`/image/gedeo.jpg`}
+                src={man.imageSrc}
                 alt=""
                 width={200}
                 height={100}
-                className="rounded-md h-full object-cover"
-              />
+                className="rounded-md h-full object-cover shadow-lg"
+                />
             </div>
             <div className="flex flex-col gap-[-12px]">
               <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
-                Gentil Gedeo
+                {man.name}
               </h1>
               <span className="text-[16px] max-w-[200px] leading-5 font-[400] text-gray-700">
-              Marketing and Development Director
+              {man.position}
               </span>
             </div>
           </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/albert.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
-                Albert Sentongo
-              </h1>
-              <span className="text-[18px] font-[400] text-gray-700">
-                Software Engineer
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/munyaneza.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full  object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
-                Dr. Faustin Munyaneza
-              </h1>
-              <span className="text-[14px] leading-4 font-[400] text-gray-700">
-                Manager, Corporate Training & HR Advisory, Consultant
-              </span>
-              <a
-                href="mailto:munyanezafaustin@yahoo.com"
-                className="text-blue-400 text-[14px]"
-              >
-                munyanezafaustin@yahoo.com
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/parfait.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full  object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
-                Nsengiyunva Parfait
-              </h1>
-              <span className="text-[16px] leading-4 font-[400] text-gray-700">
-                Public Relations Office
-              </span>
-              <a
-                href="mailto:munyanezafaustin@yahoo.com"
-                className="text-blue-400 text-[14px]"
-              >
-                {/* munyanezafaustin@yahoo.com */}
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/innocent.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
-                Innocent Imanishimwe
-              </h1>
-              <span className="text-[18px] font-[400] text-gray-700">
-                Software Engineer
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/muhindo.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
-                Muhindo Mussa
-              </h1>
-              <span className="text-[18px] font-[400] text-gray-700">
-                IT Director
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/aline.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
-                Aline Muhimpundu
-              </h1>
-              <span className="text-[16px] font-[400] text-gray-700">
-                Infinity Tech Driver Support
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/joseline.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
-                MUHAWENIMANA Joseline
-              </h1>
-              <span className="text-[16px] font-[400] text-gray-700">
-                Support
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/samuel.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
-                Samuel Ishimwe
-              </h1>
-              <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
-                Module Lead at Infinity Tech Solution
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/edson.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
-                Edson Ntwali
-              </h1>
-              <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
-                Developer
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/faustin.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[18px] text-black font-[600]">
-                Faustin Iyaremye
-              </h1>
-              <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
-                Developer
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/sharif.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
-                Sharif Mucyo
-              </h1>
-              <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
-                Legal & Compliance
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/eddy.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
-                Eddy Irankunda
-              </h1>
-              <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
-                Developer
-              </span>
-              <a
-                href="mailto:irankundaeddy14@gmail.com"
-                className="text-blue-400 text-[14px]"
-              >
-                irankundaeddy14@gmail.com
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="w-[200px] h-[250px]">
-              <Image
-                src={`/image/gustave.jpg`}
-                alt=""
-                width={200}
-                height={100}
-                className="rounded-md h-full object-cover"
-              />
-            </div>
-            <div className="flex flex-col gap-[-12px]">
-              <h1 className="text-[14px] md:text-[24px] text-black font-[600]">
-                Pinsoe Gustave
-              </h1>
-              <span className=" max-w-[200px] leading-4 text-[18px] font-[400] text-gray-700">
-                Developer
-              </span>
-              <a
-                href="mailto:ntwalimudasubirag@gmail.com"
-                className="text-blue-400 text-[14px]"
-              >
-                ntwalimudasubirag@gmail.com
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
       {/* end of our team `/image/member.png` */}

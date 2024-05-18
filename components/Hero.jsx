@@ -16,7 +16,7 @@ function Hero() {
           objectFit="cover"
         />
       </div>
-      <Navbar />
+      <Navbar className="" />
       <div className="px-2 h-full mx-auto max-w-lg flex gap-[26px] mb-14">
         <div
           initial={{ opacity: 0, scale: 0.5 }}

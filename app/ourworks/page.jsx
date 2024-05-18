@@ -1,14 +1,13 @@
 "use client";
-import { ContactUs, Footer, Navbar2 } from "@/components";
+import { ContactUs, Footer, Navbar, Navbar2 } from "@/components";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Head from "next/head";
 
 const metadata = {
-  title: "Infinity-Tech About us",
+  title: "About us | Infinity-Tech",
 };
 
 function OurWorks() {
@@ -111,16 +110,16 @@ function OurWorks() {
   const filteredCaseStudies = casestudies.filter((item) => item.status === status);
 
   const buttonLable = [
-    {name:"web and apps",id:1,status:"web"},
-    {name:"payement gateways",id:2,status:"gate"},
+    {name:"Web and Web Apps",id:1,status:"web"},
     {name:"UI/UX design",id:3,status:'ui'},
-    {name:"web and apps",id:4,status:'web'},
+    {name:"Mobile Applications",id:4,status:'web'},
+    {name:"Payment Gateways",id:2,status:"gate"},
   ];
 
   return (
     <div>
-      {/* navbar */}
-      <Navbar2 />
+      <Navbar />
+      {/* <Navbar2 /> */}
 
       {/* end navbar */}
       <div className="flex flex-col gap-6 justify-center w-full items-center pt-5">
@@ -161,6 +160,7 @@ function OurWorks() {
                   src={item.image}
                   className="h-full object-cover rounded-md"
                   alt=""
+                  priority
                   width={300}
                   height={0}
                 />
