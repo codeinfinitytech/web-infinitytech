@@ -30,7 +30,7 @@ function Hero() {
           <p className="text-white mt-2  font-outfit">
             Innovate , Navigate, Elevate
           </p>
-          <div className=" flex  gap-4 mt-6">
+          <div className="flex gap-4 mt-6">
             <a
               href="#contactus"
               className=" px-6 py-2 border border-[#F59620] text-[#F59620]
