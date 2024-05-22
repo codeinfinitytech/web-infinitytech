@@ -17,7 +17,7 @@ export const TEAMWORKERS = [
     {
         imageSrc: "/image/albert.jpg",
         name: "Albert Sentongo",
-        position: "Software Engineer",
+        position: "Chief Information Officer",
         email: ""
     },
     {
@@ -57,7 +57,7 @@ export const TEAMWORKERS = [
         email: ""
     },
     {
-        imageSrc: "/image/hawaa.jpg",
+        imageSrc: "/image/Hawaa.jpg",
         name: "MUGARAGU Hawa",
         position: "Human Resource",
         email: ""
