@@ -10,7 +10,7 @@ const Last = () => {
     ];
 
   return (
-    <main className='padding-container max-container bg-white mb-0 text-[14px] w-full'>
+    <main className='padding-container max-container bottom-0 bg-white mb-0 text-[14px] w-full'>
         <div className="text-gray-400 p-6 gap-4 block md:flex justify-between ">
             <div className='flex gap-2'>
             <p className='hidden md:block'>&copy; 2024 INFINITY TECH SOLUTION.</p>
