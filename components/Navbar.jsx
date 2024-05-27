@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { VscThreeBars } from "react-icons/vsc";
 import NavModal from "./NavModal";
@@ -48,13 +49,12 @@ const Navbar = () => {
          hover:text-white hover:bg-[#F59620]"
         >
           Reach us
-        </a>
+        </Link>
       </div>
 
       <div className="flex md:hidden" onClick={() => setIsOPen(true)}>
         <VscThreeBars color="#56697A" size={40} />
       </div>
-
       <NavModal isOpen={isOpen} onClose={() => setIsOPen(false)}>
         <div className="absolute w-full z-20 flex h-full md:hidden px-10 py-10 left-0 top-20 rounded-l-lg">
           <div className="flex flex-col text-white/70 gap-4 text-[18px] hover:text-white hover:text-[19px] hover:transition-200">

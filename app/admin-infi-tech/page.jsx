@@ -44,19 +44,19 @@ const Admin = () => {
     fetchJob();
   }, []);
 
-  useEffect(() => {
-    // Check local storage for the login status
-    const storedLoginStatus = localStorage.getItem("isLoggedIn");
+  // useEffect(() => {
+  //   // Check local storage for the login status
+  //   const storedLoginStatus = localStorage.getItem("isLoggedIn");
 
-    // If the value is "true", set isLogin to true
-    if (storedLoginStatus === "true") {
-      setIsLogin(true);
-    } else {
-      // If not in local storage, check Firebase authentication
+  //   // If the value is "true", set isLogin to true
+  //   if (storedLoginStatus === "true") {
+  //     setIsLogin(true);
+  //   } else {
+  //     // If not in local storage, check Firebase authentication
 
-      setIsLogin(false);
-    }
-  }, []);
+  //     setIsLogin(false);
+  //   }
+  // }, []);
   const openEventModal = () => {
     setEventModal(true);
   };
@@ -71,31 +71,31 @@ const Admin = () => {
     setShowJobOffersModal(false);
   };
 
-  const logout = () => {
-    // Remove the logged-in status from local storage
-    localStorage.removeItem("isLoggedIn");
+  // const logout = () => {
+  //   // Remove the logged-in status from local storage
+  //   localStorage.removeItem("isLoggedIn");
 
-    // Update the state to reflect the logged-out status
-    setIsLogin(false);
+  //   // Update the state to reflect the logged-out status
+  //   setIsLogin(false);
 
-    // Reload the page
-    window.location.reload();
-  };
+  //   // Reload the page
+  //   window.location.reload();
+  // };
 
   return (
     <div className="w-full">
-      {isLogin ? (
+      {/* {isLogin ? ( */}
         <div className="w-full h-[100vh] px-8 md:px-40 pflex flex-col">
           <div className="relative w-full border-b border-gray-400 py-4">
             <h1 className="text-[16px] text-center md:text-start md:text-[24px]">
               Infinity Tech solution Admin Panel
             </h1>
-            <button
+            {/* <button
               onClick={logout}
               className="text-red-500 hover:opacity-60 cursor-pointer absolute right-0 top-7"
             >
               Logout
-            </button>
+            </button> */}
           </div>
           <div className="flex flex-col sm:flex-row gap-4 py-2">
             <div className="border border-gray-400 p-2 w-[150px] flex flex-col gap-2 rounded-md">
@@ -176,9 +176,9 @@ const Admin = () => {
           </div>
           <div className="flex flex-col gap-2">{/* JobOffers modal */}</div>
         </div>
-      ) : (
+      {/* ) : (
         <AdminLogin isLogin={setIsLogin} />
-      )}
+      )} */}
     </div>
   );
 };

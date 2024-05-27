@@ -27,7 +27,7 @@ const WebMobile = () => {
           </span>
 
           <p className="text-[16px] font-normal sm-w-[80%] text-[#56697A] font-outfit">
-            Our mobile application development services provide the proper
+            Our mobile application development services provides the proper
             solutions and resources to assist organizations in creating
             high-quality, user-friendly, and engaging mobile apps. Our skilled
             app developers and UI/UX designers can assist.
