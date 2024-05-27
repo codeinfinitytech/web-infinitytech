@@ -4,12 +4,13 @@ import SplashScreen from '@/components/SplashScreen'
 import { Toaster } from "react-hot-toast"
 import React from 'react'
 import { Navbar } from '@/components'
+import Last from '@/components/Last'
 
 
 const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Infinity Tech solution',
+  title: 'Home | Infinity Tech Solution',
   description: 'Infinity Tech',
 }
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={outfit.className}>
         <Toaster position='top-right'/>
         {children}
+        <Last />
         </body>
     </html>
   )

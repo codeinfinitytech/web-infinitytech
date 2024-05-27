@@ -1,11 +1,16 @@
-import { Navbar2 } from "@/components";
+import { Navbar } from "@/components";
 import Job from "@/components/events/Job";
 import React from "react";
+
+export const metadata = {
+  title: "Job Offers | Infinity-Tech",
+};
+
 
 const Offers = () => {
   return (
     <div>
-      <Navbar2 />
+      <Navbar />
       <Job />
     </div>
   );

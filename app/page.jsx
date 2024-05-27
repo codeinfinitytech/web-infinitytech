@@ -9,7 +9,9 @@ import {
   WhatSay,
 } from "@/components";
 import Hero from "@/components/Hero";
+import Last from "@/components/Last";
 import SplashScreen from "@/components/SplashScreen";
+import Internship from "@/components/services/Internship";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ScrollToTop from "react-scroll-to-top";
@@ -24,9 +26,8 @@ export default function Home() {
       // Simulating a delay using setTimeout
       const timeoutId = setTimeout(() => {
         setIsLoading(false); // Set isLoading to false after the timeout
-      }, 2000); // Adjust the timeout duration (in milliseconds) as needed
+      }, 2000);
 
-      // Cleanup function to clear the timeout if the component unmounts or isLoading changes before the timeout completes
       return () => clearTimeout(timeoutId);
     }
   }, [isLoading]);
@@ -49,6 +50,7 @@ export default function Home() {
           <Hero />
           <Services />
           <WebMobile />
+          <Internship/>
           <CaseStudies />
           <Aboutus />
           <WhatSay />

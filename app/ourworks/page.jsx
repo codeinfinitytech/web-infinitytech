@@ -1,14 +1,13 @@
 "use client";
-import { ContactUs, Footer, Navbar2 } from "@/components";
+import { ContactUs, Footer, Navbar, Navbar2 } from "@/components";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Head from "next/head";
 
 const metadata = {
-  title: "Infinity-Tech About us",
+  title: "About us | Infinity-Tech",
 };
 
 function OurWorks() {
@@ -18,10 +17,10 @@ function OurWorks() {
   const casestudies = [
     {
       id: 1,
-      name: "Delivery App",
-      client: "Tuza Rwanda",
+      name: "Legal connect",
+      client: "Legal",
       type: "Mobile App Development",
-      image: `/image/deliveryApp.png`,
+      image: `/image/legalconnect.png`,
       date: "Augst 2023",
       status: "web"
     },
@@ -54,10 +53,10 @@ function OurWorks() {
     },
     {
       id: 4,
-      name: "Web Design",
-      client: "Tuza Rwanda",
+      name: "Company management",
+      client: "Infinity",
       type: "Web Development",
-      image: `/image/project6.webp`,
+      image: `/image/employee2.png`,
       date: "November 2023",
       status: "web"
     },
@@ -79,9 +78,27 @@ function OurWorks() {
       date: "June 2023",
       status: "ui"
     },
+    {
+      id: 7,
+      name: "Saga Bay",
+      client: "Saga",
+      type: "Web Development",
+      image: `/image/Hello.png`,
+      date: "November 2023",
+      status: "web"
+    },
+    {
+      id: 8,
+      name: "Infinitydriver",
+      client: "Infinity",
+      type: "Web Development",
+      image: `/image/drivera.png`,
+      date: "November 2023",
+      status: "web"
+    },
   ];
   const [status, setStatus] = useState("web");
-  const [activeButton, setActiveButton] = useState(0);
+  const [activeButton, setActiveButton] = useState(1);
 
   const handleButtonClick = (item) => {
     setActiveButton(item.id);
@@ -93,16 +110,16 @@ function OurWorks() {
   const filteredCaseStudies = casestudies.filter((item) => item.status === status);
 
   const buttonLable = [
-    {name:"web and apps",id:1,status:"web"},
-    {name:"payement gateways",id:2,status:"gate"},
+    {name:"Web and Web Apps",id:1,status:"web"},
     {name:"UI/UX design",id:3,status:'ui'},
-    {name:"web and apps",id:4,status:'web'},
+    {name:"Mobile Applications",id:4,status:'web'},
+    {name:"Payment Gateways",id:2,status:"gate"},
   ];
 
   return (
     <div>
-      {/* navbar */}
-      <Navbar2 />
+      <Navbar />
+      {/* <Navbar2 /> */}
 
       {/* end navbar */}
       <div className="flex flex-col gap-6 justify-center w-full items-center pt-5">
@@ -143,6 +160,7 @@ function OurWorks() {
                   src={item.image}
                   className="h-full object-cover rounded-md"
                   alt=""
+                  priority
                   width={300}
                   height={0}
                 />

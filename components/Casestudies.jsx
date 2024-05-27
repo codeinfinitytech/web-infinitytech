@@ -12,26 +12,26 @@ const CaseStudies = () => {
   const casestudies = [
     {
       id: 1,
-      name: "Delivery App",
+      name: "Company Management",
       client: "Tuza Rwanda",
-      type: "Mobile App Development",
-      image: `/image/deliveryApp.png`,
-      date: "Augst 2023",
+      type: "Web Application",
+      image: `/image/employee2.png`,
+      date: "August 2023",
     },
     {
       id: 2,
-      name: "Infinity Tech Driver",
-      client: "Infinity Tech solution",
-      type: "Mobile App Development",
-      image: `/image/driver.png`,
-      date: "June 2023",
+      name: "SAGA BAY",
+      client: "SAGA BAY Restraunt",
+      type: "Wep Application",
+      image: `/image/WAITERPORTAL.png`,
+      date: "March 2024",
     },
     {
       id: 3,
       name: "Tuza podcast",
       client: "Tuza Rwanda",
-      type: "UI/UX,Developement",
-      image: `/image/goweb.png`,
+      type: "UI/UX Development",
+      image: `/image/legalconnect.png`,
       date: "October 2023",
     },
   ];
@@ -51,7 +51,7 @@ const CaseStudies = () => {
           className="text-[24px] sm:text-[36px] w-[300px] sm:w-[620px] text-center font-bold font-outfit"
           style={{ lineHeight: 1 }}
         >
-          We develop <span className="text-[#F59620]">products</span> that
+          We develop <span className="text-[#F59620] capitalize">products</span> that
           address issues faced by customers.
         </h1>
 

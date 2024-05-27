@@ -1,4 +1,5 @@
 "use client";
+import { buttonLable } from "@/constants/libs";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -8,17 +9,13 @@ function webDevelopement() {
   const handleButtonClick = (buttonId) => {
     setActiveButton(buttonId);
   };
-  const buttonLable = [
-    "Web and Apps",
-    "Payement Gateways",
-    "UI/UX Design",
-    "Web and Apps",
-  ];
+
   const renderContent = () => {
     switch (activeButton) {
       case 0:
         return (
           <div className="w-full flex flex-col md:flex-row gap-2 p-2 pt-6 sml:p-10 mdl:p-1 mt-10 justify-center items-center">
+            
             <Image
               src={`/image/service1.png`}
               alt="service image 1"
@@ -117,7 +114,7 @@ function webDevelopement() {
               <path
                 d="M-210 213.328C-210 331.146 -116.161 426.656 -0.403824 426.656C115.353 426.656 209.192 331.146 209.192 213.328C209.192 95.5102 115.353 0 -0.403824 0C-116.161 0 -210 95.5102 -210 213.328ZM114.232 213.328C114.232 277.767 62.9077 330.005 -0.403824 330.005C-63.7154 330.005 -115.039 277.767 -115.039 213.328C-115.039 148.889 -63.7154 96.6512 -0.403824 96.6512C62.9077 96.6512 114.232 148.889 114.232 213.328Z"
                 fill="#56697A"
-                fill-opacity="0.2"
+                fillOpacity="0.2"
               />
               <ellipse
                 cx="72.8384"
@@ -126,7 +123,7 @@ function webDevelopement() {
                 ry="74.1352"
                 transform="matrix(-1 0 0 1 72.4346 139.193)"
                 fill="#F59620"
-                fill-opacity="0.32"
+                fillOpacity="0.32"
               />
             </svg>
           </div>
@@ -147,13 +144,13 @@ function webDevelopement() {
             </p>
             <div className="flex flex-col gap-2">
               <h1 className="text-[18px] font-[600] text-black">
-                Out Technologies
+                Our Technologies
               </h1>
-              <div className="flex gap-4">
+              <div className="flex gap-4 ">
                 <div className="flex flex-col">
                   <Image
                     src={`/image/reactjs.png`}
-                    alt="react js"
+                    alt="react"
                     width={30}
                     height={0}
                   />
@@ -162,29 +159,29 @@ function webDevelopement() {
                 <div className="flex flex-col">
                   <Image
                     src={`/image/reactjs.png`}
-                    alt="react js"
+                    alt="react"
                     width={30}
                     height={0}
                   />
-                  <span className="text-black">React js</span>
+                  <span className="text-black">Angular js</span>
                 </div>
                 <div className="flex flex-col">
                   <Image
                     src={`/image/reactjs.png`}
-                    alt="react js"
+                    alt="node"
                     width={30}
                     height={0}
                   />
-                  <span className="text-black">React js</span>
+                  <span className="text-black">Node js</span>
                 </div>
                 <div className="flex flex-col">
                   <Image
                     src={`/image/reactjs.png`}
-                    alt="react js"
+                    alt="spring"
                     width={30}
                     height={0}
                   />
-                  <span className="text-black">React js</span>
+                  <span className="text-black">Springboot MVC</span>
                 </div>
               </div>
             </div>
@@ -192,7 +189,7 @@ function webDevelopement() {
         </div>
         <div className="flex flex-col w-full mdl:w-1/2 px-2 py-6 md:py-0">
           <div className="grid grid-cols-2 sml:grid-cols-4  w-full">
-            {buttonLable.map((item, index) => (
+            { buttonLable.map((item, index) => (
               <button
                 key={index}
                 onClick={() => handleButtonClick(index)}
