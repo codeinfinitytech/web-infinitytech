@@ -22,13 +22,13 @@ const Internship = () => {
           and kickstart your career in web development. Apply now and unlock the
           door to endless possibilities!
         </span>
-        <span
+        <a href="https://forms.gle/nsgsBKmMQasVzzuGA" target="_blank"
      
-          onClick={handelModal}
+          // onClick={handelModal}
           className="p-3 cursor-pointer rounded-[14px] text-[18px] mt-4 px-10 w-[200px] flex items-center justify-center bg-[#F59620] text-white"
         >
           Apply Now
-        </span>
+        </a>
       </div>
       {openModal ?(
         <NoIntern handelModal={handelModal}/>
