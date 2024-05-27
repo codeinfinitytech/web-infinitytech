@@ -10,6 +10,7 @@ const SplashScreen = () => {
           <Image
             src={`/image/logoOgy.png`}
             alt="spin"
+            priority
             width={50}
             height={0}
             className=" animate-reverse-spin"

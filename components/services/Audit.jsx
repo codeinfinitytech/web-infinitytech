@@ -1,4 +1,5 @@
 "use client";
+import { buttonLable } from "@/constants/libs";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -8,12 +9,7 @@ function Audit() {
   const handleButtonClick = (buttonId) => {
     setActiveButton(buttonId);
   };
-  const buttonLable = [
-    "web and apps",
-    "payement gateways",
-    "UI/UX design",
-    "web and apps",
-  ];
+
   const renderContent = () => {
     switch (activeButton) {
       case 0:
@@ -132,7 +128,7 @@ function Audit() {
               <path
                 d="M-3.05176e-05 213.328C-3.05176e-05 331.146 93.8394 426.656 209.596 426.656C325.353 426.656 419.192 331.146 419.192 213.328C419.192 95.5102 325.353 0 209.596 0C93.8394 0 -3.05176e-05 95.5102 -3.05176e-05 213.328ZM324.232 213.328C324.232 277.767 272.908 330.005 209.596 330.005C146.285 330.005 94.9605 277.767 94.9605 213.328C94.9605 148.889 146.285 96.6512 209.596 96.6512C272.908 96.6512 324.232 148.889 324.232 213.328Z"
                 fill="#56697A"
-                fill-opacity="0.2"
+                fillOpacity="0.2"
               />
               <ellipse
                 cx="72.8384"
@@ -141,7 +137,7 @@ function Audit() {
                 ry="74.1352"
                 transform="matrix(-1 0 0 1 282.435 139.193)"
                 fill="#F59620"
-                fill-opacity="0.32"
+                fillOpacity="0.32"
               />
             </svg>
           </div>

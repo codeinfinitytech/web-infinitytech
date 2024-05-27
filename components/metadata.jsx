@@ -1,3 +1,3 @@
 export const metadata = {
-  title: "Infinity-Tech  About us",
+  title: " About us | Infinity-Tech",
 };

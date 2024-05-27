@@ -2,12 +2,13 @@ import { Inter,Outfit } from 'next/font/google'
 import './globals.css'
 import SplashScreen from '@/components/SplashScreen'
 import { Toaster } from "react-hot-toast"
+import Last from '@/components/Last'
 
 
 const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Infinity Tech solution',
+  title: 'Home | Infinity Tech Solution',
   description: 'Infinity Tech',
 }
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         
         <Toaster position='top-right'/>
         {children}
+        <Last />
         </body>
     </html>
   )
